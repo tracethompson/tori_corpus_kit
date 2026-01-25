@@ -1,0 +1,217 @@
+{
+  "metadata": {
+    "description": "Keyword dictionary for stakeholder classification in FDA HCTP comments",
+    "version": "1.0",
+    "docket": "FDA-2015-D-3719",
+    "last_updated": "2024-01-01",
+    "instructions": "Edit this file to refine stakeholder classification. Add keywords that strongly indicate each category."
+  },
+  "stakeholder_categories": {
+    "patient": {
+      "description": "Individuals who have received or are seeking HCTP treatments",
+      "keywords": [
+        "as a patient",
+        "i am a patient",
+        "my treatment",
+        "my condition",
+        "my disease",
+        "my diagnosis",
+        "i suffer from",
+        "i was diagnosed",
+        "saved my life",
+        "changed my life",
+        "my recovery",
+        "my pain",
+        "my symptoms",
+        "my quality of life"
+      ],
+      "credential_patterns": [],
+      "possessive_weight": 2.0,
+      "technical_density_max": 1.0
+    },
+    "patient_advocate": {
+      "description": "Family members, caregivers, or advocacy organizations representing patients",
+      "keywords": [
+        "my husband",
+        "my wife",
+        "my mother",
+        "my father",
+        "my child",
+        "my son",
+        "my daughter",
+        "family member",
+        "loved one",
+        "caregiver",
+        "patient advocate",
+        "advocacy group",
+        "patient community",
+        "on behalf of patients"
+      ],
+      "credential_patterns": [],
+      "possessive_weight": 1.5,
+      "technical_density_max": 1.5
+    },
+    "healthcare_provider": {
+      "description": "Physicians, nurses, and other licensed medical professionals",
+      "keywords": [
+        "as a physician",
+        "as a doctor",
+        "i am a physician",
+        "i am a doctor",
+        "medical practice",
+        "my patients",
+        "in my practice",
+        "clinical experience",
+        "i have treated",
+        "patient outcomes",
+        "medical director"
+      ],
+      "credential_patterns": [
+        "MD",
+        "M.D.",
+        "DO",
+        "D.O.",
+        "NP",
+        "PA",
+        "RN",
+        "physician",
+        "doctor",
+        "surgeon"
+      ],
+      "possessive_weight": 0.5,
+      "technical_density_min": 1.5
+    },
+    "clinic_operator": {
+      "description": "Operators of clinics or medical facilities offering HCTP procedures",
+      "keywords": [
+        "our clinic",
+        "our facility",
+        "our practice",
+        "we offer",
+        "we provide",
+        "we perform",
+        "our patients",
+        "clinic director",
+        "medical director",
+        "regenerative medicine clinic",
+        "stem cell clinic"
+      ],
+      "credential_patterns": [],
+      "possessive_weight": 0.5,
+      "organizational_indicators": true
+    },
+    "industry": {
+      "description": "Companies manufacturing, processing, or distributing HCTPs",
+      "keywords": [
+        "our company",
+        "our organization",
+        "we manufacture",
+        "we produce",
+        "we process",
+        "our products",
+        "on behalf of",
+        "industry",
+        "manufacturer",
+        "supplier",
+        "distributor"
+      ],
+      "credential_patterns": [
+        "CEO",
+        "COO",
+        "President",
+        "Vice President",
+        "Director of Regulatory"
+      ],
+      "possessive_weight": 0.0,
+      "organizational_indicators": true,
+      "technical_density_min": 2.0
+    },
+    "researcher": {
+      "description": "Academic or clinical researchers in regenerative medicine",
+      "keywords": [
+        "our research",
+        "our study",
+        "our findings",
+        "we have studied",
+        "published",
+        "peer-reviewed",
+        "clinical trial",
+        "laboratory",
+        "university",
+        "institution",
+        "principal investigator"
+      ],
+      "credential_patterns": [
+        "PhD",
+        "Ph.D.",
+        "Professor",
+        "researcher",
+        "scientist"
+      ],
+      "possessive_weight": 0.0,
+      "technical_density_min": 2.5
+    },
+    "legal_professional": {
+      "description": "Attorneys or legal professionals commenting on regulatory matters",
+      "keywords": [
+        "as an attorney",
+        "legal counsel",
+        "law firm",
+        "regulatory counsel",
+        "on behalf of our client",
+        "legal opinion",
+        "legal analysis"
+      ],
+      "credential_patterns": [
+        "JD",
+        "J.D.",
+        "Esq",
+        "attorney",
+        "lawyer",
+        "counsel"
+      ],
+      "possessive_weight": 0.0,
+      "technical_density_min": 2.0
+    },
+    "general_public": {
+      "description": "Members of the public without clear stakeholder affiliation",
+      "keywords": [
+        "as a citizen",
+        "as a taxpayer",
+        "concerned citizen",
+        "concerned about",
+        "i believe",
+        "i think",
+        "in my opinion"
+      ],
+      "credential_patterns": [],
+      "possessive_weight": 1.0,
+      "technical_density_max": 0.5
+    }
+  },
+  "classification_rules": {
+    "require_multiple_signals": true,
+    "min_keyword_matches": 2,
+    "credential_boost": 1.5,
+    "possessive_language_weight": 1.0,
+    "technical_density_weight": 1.0,
+    "confidence_thresholds": {
+      "high": 0.8,
+      "medium": 0.5,
+      "low": 0.3
+    }
+  },
+  "exclusion_patterns": {
+    "description": "Patterns that should exclude certain classifications",
+    "industry_excludes_patient": [
+      "our company",
+      "we manufacture",
+      "on behalf of"
+    ],
+    "researcher_excludes_patient": [
+      "our study",
+      "we conducted research",
+      "our findings"
+    ]
+  }
+}

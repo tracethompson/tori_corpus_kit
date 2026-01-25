@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "description": "Technical regulatory vocabulary for FDA HCTP comment analysis",
+    "version": "1.0",
+    "docket": "FDA-2015-D-3719",
+    "last_updated": "2024-01-01"
+  },
+  "regulatory_citations": {
+    "cfr_references": [
+      "21 CFR 1271",
+      "21 CFR 1271.10",
+      "21 CFR 1271.15",
+      "21 CFR 1271.20",
+      "21 CFR 1271.3",
+      "21 CFR Part 1271",
+      "CFR 1271"
+    ],
+    "phsa_references": [
+      "Section 351",
+      "Section 361",
+      "351 PHSA",
+      "361 PHSA",
+      "351(a)",
+      "361 HCT/P",
+      "Public Health Service Act"
+    ],
+    "fda_guidance_docs": [
+      "same surgical procedure",
+      "minimal manipulation",
+      "homologous use",
+      "draft guidance",
+      "final guidance",
+      "guidance document"
+    ]
+  },
+  "technical_terms": {
+    "hctp_terminology": [
+      "HCT/P",
+      "HCTP",
+      "human cells",
+      "human tissues",
+      "cellular products",
+      "tissue-based products",
+      "cell therapy",
+      "tissue engineering"
+    ],
+    "regulatory_classification": [
+      "351 product",
+      "361 product",
+      "biological product",
+      "drug product",
+      "device",
+      "combination product",
+      "premarket approval",
+      "BLA",
+      "biologics license application",
+      "IND",
+      "investigational new drug"
+    ],
+    "manipulation_terms": [
+      "minimal manipulation",
+      "more than minimal manipulation",
+      "processing",
+      "manufacturing",
+      "culture expansion",
+      "cell expansion",
+      "enzymatic digestion",
+      "mechanical separation",
+      "centrifugation"
+    ],
+    "homologous_use": [
+      "homologous use",
+      "non-homologous use",
+      "same basic function",
+      "relevant characteristics",
+      "functional tissue"
+    ],
+    "medical_procedures": [
+      "autologous",
+      "allogeneic",
+      "point of care",
+      "same surgical procedure",
+      "surgical exception",
+      "intraoperative",
+      "bedside processing"
+    ],
+    "cell_types": [
+      "stem cells",
+      "mesenchymal stem cells",
+      "MSC",
+      "adipose-derived",
+      "bone marrow",
+      "umbilical cord",
+      "amniotic",
+      "placental",
+      "stromal vascular fraction",
+      "SVF",
+      "platelet-rich plasma",
+      "PRP"
+    ],
+    "clinical_conditions": [
+      "orthopedic",
+      "musculoskeletal",
+      "joint",
+      "arthritis",
+      "degenerative",
+      "autoimmune",
+      "neurological",
+      "cardiac",
+      "wound healing"
+    ]
+  },
+  "legal_procedural_terms": [
+    "pursuant",
+    "herein",
+    "thereof",
+    "whereas",
+    "hereby",
+    "undersigned",
+    "submission",
+    "comment period",
+    "docket",
+    "rulemaking",
+    "promulgate",
+    "codify"
+  ],
+  "compliance_terms": [
+    "compliance",
+    "enforcement",
+    "enforcement discretion",
+    "regulatory pathway",
+    "registration",
+    "establishment registration",
+    "inspection",
+    "adverse event",
+    "safety reporting"
+  ],
+  "stopwords_to_exclude": [
+    "fda",
+    "food",
+    "drug",
+    "administration",
+    "comment",
+    "guidance",
+    "regulation"
+  ]
+}
