@@ -51,6 +51,16 @@ def run_phase_1():
         logger.error(f"Scraper error: {e}")
         raise
 
+    # Tool 1b: Attachment Fetcher (runs automatically after scraper)
+    logger.info("\n[Tool 1b] Running Attachment Fetcher...")
+    try:
+        from scrapers.attachment_fetcher import AttachmentFetcher
+        fetcher = AttachmentFetcher()
+        result = fetcher.run()
+        logger.info(f"Attachment fetcher: {result.get('attachments_downloaded', 0)} attachments recovered")
+    except Exception as e:
+        logger.error(f"Attachment fetcher error: {e}")
+
     # Tool 2: Docket Search
     logger.info("\n[Tool 2] Searching for related dockets...")
     try:
@@ -201,10 +211,18 @@ def run_tool(tool_name: str, **kwargs):
 def run_scraper(limit: int = None, **kwargs):
     """Run regulations scraper."""
     from scrapers.regulations_scraper import RegulationsScraper
+    from scrapers.attachment_fetcher import AttachmentFetcher
+
     scraper = RegulationsScraper()
     comments = scraper.scrape_docket(limit=limit)
     scraper.export_searchable_text(comments)
     scraper.export_csv(comments)
+
+    # Automatically run attachment fetcher after scraping
+    logger.info("Running attachment fetcher...")
+    fetcher = AttachmentFetcher()
+    result = fetcher.run()
+    logger.info(f"Attachment fetcher: {result.get('attachments_downloaded', 0)} attachments recovered")
 
 
 def run_search(**kwargs):

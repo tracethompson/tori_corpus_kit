@@ -351,18 +351,18 @@ class RegulationsScraper:
         # Fetch comment list
         comment_list = self.fetch_comments_list(docket_id)
 
-        if limit:
-            comment_list = comment_list[:limit]
+        # Filter out already-processed comments
+        comments_to_process = [c for c in comment_list if c.get("id", "") not in processed_ids]
 
-        logger.info(f"Processing {len(comment_list)} comments...")
+        # Apply limit to NEW comments to fetch
+        if limit:
+            comments_to_process = comments_to_process[:limit]
+
+        logger.info(f"Processing {len(comments_to_process)} new comments...")
 
         # Process each comment
-        for i, comment_meta in enumerate(tqdm(comment_list, desc="Fetching comments")):
+        for i, comment_meta in enumerate(tqdm(comments_to_process, desc="Fetching comments")):
             comment_id = comment_meta.get("id", "")
-
-            # Skip if already processed
-            if comment_id in processed_ids:
-                continue
 
             # Fetch and process full comment
             detail = self.fetch_comment_detail(comment_id)
@@ -375,13 +375,13 @@ class RegulationsScraper:
             if (i + 1) % config.CHECKPOINT_INTERVAL == 0:
                 self._save_checkpoint(
                     checkpoint_file, output_file,
-                    processed_comments, processed_ids, i + 1
+                    processed_comments, processed_ids, len(processed_comments)
                 )
 
         # Final save
         self._save_checkpoint(
             checkpoint_file, output_file,
-            processed_comments, processed_ids, len(comment_list)
+            processed_comments, processed_ids, len(processed_comments)
         )
 
         logger.info(f"Scraping complete. Stats: {self.stats}")
