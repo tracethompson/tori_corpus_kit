@@ -1,0 +1,59 @@
+# Environment and secrets
+.env
+.env.*
+*.env
+
+# API keys and credentials
+credentials.json
+secrets.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Data files (large/generated)
+data/raw/*.json
+data/raw/*.csv
+data/raw/*.txt
+data/processed/
+data/outputs/
+
+# Keep directory structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/outputs/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+docket-discourse.log
+
+# Test/Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Claude Code
+.claude/
