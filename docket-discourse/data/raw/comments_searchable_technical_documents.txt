@@ -1,0 +1,98 @@
+================================================================================
+COMMENT ID: FDA-2015-D-3719-0004
+DATE: 2016-01-11T05:00:00Z
+================================================================================
+
+The terminology used in the draft guidance is in my view not sufficiently descriptive of the challenges facing the use of HCT/Ps.<br/><br/>There is also the question of the use of autologous cells vs. allogeneic cells whether for adipose tissue or homologous us.<br/><br/>Autologous adipose tissue has been used by cosmetic surgeons for many years to &quot;fill&quot; areas on a patient using their own tissue.  <br/><br/>Care must be taken when creating new guidances and regulation on the use of these types of tissues for treatment or study that may drive potentially useful therapies away from study and drive potentially harmful practices under ground, perhaps under the guise of &quot;cosmetic surgery&quot;.<br/><br/>
+
+================================================================================
+COMMENT ID: FDA-2015-D-3719-0003
+DATE: 2016-01-11T05:00:00Z
+================================================================================
+
+Re: Comments on &quot;Draft Guidances Relating to the Regulation of Human Cells, Tissues, or Cellular or Tissue-Based Products&quot; <br/><br/>I wish to comment on the concerned draft guidance and propose introduction of certain measures that would facilitate informed decision-making by stakeholders involved. All participants in the system need reliable and accurate information to make better treatment decisions: patients who consider stem cell treatments, healthcare professionals who care for these patients before and after such treatment, and payers, who may or may not wish to include these therapies in their programs depending on their benefits, risks, and cost-effectiveness. <br/><br/>The Helsinki Declaration says on unproven Interventions in Clinical Practice:<br/>37. In the treatment of an individual patient, where proven interventions do not exist or other known interventions have been ineffective, the physician, after seeking expert advice, with informed consent from the patient or a legally authorized representative, may use an unproven intervention if in the physician&#39;s judgement it offers hope of saving life, re-establishing health or alleviating suffering. This intervention should subsequently be made the object of research, designed to evaluate its safety and efficacy. In all cases, new information must be recorded and, where appropriate, made publicly available.<br/><br/>Most stem cell interventions are not reimbursed by insurers. Most of the time, patients have to pay for these treatments themselves. Patients are making decisions based on information they can find in public domain. Currently, it is very difficult to accurately evaluate the benefit:risk profile of stem cell treatments. Because procedures under 21 CFR part 1271 (CGTP) do not qualify as studies, treatment outcomes of these interventions are never made available to the public. <br/>Interventions offered by establishments under 21 CFR part 1271 (CGTP) rely on studies that have already been done and published, as well as their own empirical experience from own medical practice. Brief overview of registered studies and published studies illustrate the scope and extent of the information gap on stem cell treatments and their outcomes. <br/><br/>Creation of a registry <br/>To facilitate informed decision-making by patients, healthcare professionals, and insurers, I am suggesting creation of a registry into which information on stem cell interventions conducted under 21 CFR part 1271 would be reported. To make such undertaking worthwhile, the anonymized dataset would have to include indication, type of treatment, and treatment outcome. Not only this would greatly benefit patients, who would be able to make truly informed choice for themselves; this registry could also benefit healthcare professionals who would be able to compare stem cell interventions to other existing therapies. <br/><br/>In total, 5,298 studies conducted with stem cells globally as of January 7, 2016 (ClinicalTrials.gov). Most studies are conducted in highly regulated markets in the U.S. and in Europe. Other popular destinations include China, Iran, Israel and Middle America. (FIG 1) <br/><br/>The register lists wide variety of conditions studied in a manner that is difficult to assess. Many conditions are listed under wide variety of terms, often overlapping, some low level, and others very general and high level. It is therefore difficult to judge whether a study intervention should be at all included in a specific evaluation without detailed scrutiny of the study objectives and design. This task is challenging even for an experienced biomedical researcher, and virtually impossible for a non-healthcare professional. <br/><br/>Stem cell therapies potentially offer great benefits to patients whose current options are either limited or non-existent. Some patients are willing to undergo new, experimental and unproven therapies, to take advantage of this cutting-edge research. These people are taking all the risks associated with novel therapies and procedures upon themselves.<br/>To protect the interests of patients, and to support innovation in this rapidly developing field of medicine, it would be wise to facilitate substantial improvement of the information environment, and to provide all parties involved with the information they need to make better treatment decisions. <br/><br/>
+
+================================================================================
+COMMENT ID: FDA-2015-D-3719-0008
+DATE: 2016-02-19T05:00:00Z
+================================================================================
+
+I traveled to California 2-1/2 years ago and had stem cell therapy on my left knee which had arthritis and a torn meniscus.  I greatly benefitted from this treatment and no longer take anti inflammatory drugs.  They used only my stem cells harvested from abdominal fat.  I would consider this treatment again in the future.  <br/>
+
+================================================================================
+COMMENT ID: FDA-2015-D-3719-0014
+DATE: 2016-03-08T05:00:00Z
+================================================================================
+
+I want to comment in favor of Stem Cells.  My wife is now 59 and diagnosed at 50 with early onset by Mayo Clinic. She receives treatments in Panama with cells from umbilical cords of normal live births.  The donors are tested every month and my wife is tested prior to each treatment.  Stem Cells do not cure Alzheimers.  However the progress which was once rapid has greatly slowed and she is in great physical shape.  The average person lives 8 years after diagnosis and she is beyond that. The cells are supposed to reduce the inflammation in the brain they think which slows but not cures the disease.  As an example at the gym everyday she does the rowing machine 35-40 minutes.  Attached is a fairly current photo of her showing that her physical aging is much less than what is normal with Alzheimers as well.
+
+================================================================================
+COMMENT ID: FDA-2015-D-3719-0026
+DATE: 2016-08-23T04:00:00Z
+================================================================================
+
+Please find below comments on &#39;Draft Guidances Relating to the Regulation of Human Cells, Tissues, or Cellular or Tissue- Based Products; Public Hearing; Request for Comments&#39; by the REGenableMED consortium. <br/><br/>REGenableMED - REGenableMED is a United Kingdom Economic and Social Research Council (ESRC)-funded project (NES/L002779/1: http://www.york.ac.uk/satsu/regenablemed/ ). It brings together research team builds on work by social science experts based in Birmingham, Edinburgh, Sussex and York in the UK. It is coordinated by Pr Andrew Webster, Science and Technology Studies Unit at the University of York, UK. The project aims to examine the dynamics of innovation within the field of regenerative medicine. Using a mixed-methods social science approach, the project will undertake a detailed analysis of the interplay between business models, measures of clinical utility, patterns of regulatory oversight and clinical workflows within healthcare settings. The results of the research will inform strategies aimed at facilitating the responsible development of effective and useful regenerative medicine products and services.<br/><br/>All work packages of the project consider what we call the &#39;institutional readiness&#39;, i. e. the capacity and willingness of key pre-existing organisations and inter-organisational structures to adopt, respond to and utilise novel technologies, such as advanced therapy medicinal products as part of regenerative medicine. One work package led by Prof Alex Faulkner, Centre for Global Health Policy, School of Global Studies, University of Sussex, the UK is dealing with the role of a range of intermediary agencies, patient groups and health insurance companies, in determining what can be called &#39;healthcare readiness&#39; for the field, that is, how the field aligns with and can be embedded in existing practice and how far changes need to be made. As part of this work a regular survey of regulatory tools (including relevant linked public consultations) that influence the pathways through which the field develops is performed. The draft response has been prepared by Dr Aurlie Mahalatchimy (academic lawyer), Prof Alex Faulkner and Prof Andrew Webster (sociologists). A discussion between persons interested was then organised and the attached answer circulated to all project participants before submission.<br/><br/>The REGenableMED consortium is grateful to the U.S. Food and Drug Administration to have been given the opportunity to contribute to this consultation.<br/><br/>COMMENTS<br/><br/><span style='padding-left: 30px'></span>Minimal manipulation<br/><br/>-<span style='padding-left: 30px'></span>The FDA needs to clarify whether and if so at what point, a series or sequence of &#39;minimal&#39; manipulations might be deemed to alter the relevant biological characteristics of cells or tissues? This is especially important, for example, for clinical researchers and companies developing bio-processing technologies as near-to-patient medical devices that are proposed as involving minimal manipulations.<br/><br/><span style='padding-left: 30px'></span>Homologous use<br/><br/>Could you please clarify your guidance regarding bone marrow?<br/><br/>-<span style='padding-left: 30px'></span>How could bone marrow be regulated solely under section 361 of the PHS Act and 21 CFR Part 1271?<br/>Indeed, to this end, it has to meet all of the criteria of 21 CFR 1271.10(a) (including to be &quot;minimally manipulated&quot;, to be &quot;intended for homologous use only&quot; and its manufacture shall not &quot;involve the combination of the cells or tissues with another article&quot;) while, by definition, &quot;minimally manipulated bone marrow for homologous use and not combined with another article&quot; is not considered HCT/P. (21 CFR 1271.3(d) (4))<br/>-<span style='padding-left: 30px'></span>Moreover, an example is given of a non- homologous use of bone marrow: &quot;HPCs derived from bone marrow are infused into an artery with a balloon catheter for the purpose of limiting ventricular remodeling following acute myocardial infarction. This is not homologous use because limiting ventricular remodeling is not a basic function of bone marrow.&quot; (page 5, 3-1 (b)).<br/>-<span style='padding-left: 30px'></span>Moreover, do you consider that hematopoietic functions are basic functions of bone marrow, and that there could be homologous use of hematopoietic stem/progenitor cells derived from bone marrow for haematopoietic purposes?<br/>-<span style='padding-left: 30px'></span>Finally, as long as bone marrow cells have been shown to demonstrate osteopoesis, do you consider there is sufficient evidence to support that osteopoesis could be considered as a basic function of bone marrow cells, and consequently homologous use?<br/>
+
+================================================================================
+COMMENT ID: FDA-2015-D-3719-0091
+DATE: 2016-09-28T04:00:00Z
+================================================================================
+
+I do not feel the government should be regulating a person&#39;s use of her own stem cells. I do feel clinic need to be regulated that they are using sterile procedures and are honest. People should have access to their own stem cells injected into their own bodies not for use by someone else
+
+================================================================================
+COMMENT ID: FDA-2015-D-3719-0051
+DATE: 2016-09-28T04:00:00Z
+================================================================================
+
+I firmly agree to the use of stem cell therapy to treat certain diseases, especially using adipose and bone marrow aspirate.
+
+================================================================================
+COMMENT ID: FDA-2015-D-3719-0093
+DATE: 2016-09-28T04:00:00Z
+================================================================================
+
+Withdraw the four HCT/P guidance documents.<br/><br/>Get out of the business of regulating a person&#39;s use of their own body parts.<br/>
+
+================================================================================
+COMMENT ID: FDA-2015-D-3719-0096
+DATE: 2016-09-28T04:00:00Z
+================================================================================
+
+Please find attached Johnson and Johnson comments on Docket No. FDA-2015-D-3719
+
+================================================================================
+COMMENT ID: FDA-2015-D-3719-0070
+DATE: 2016-09-28T04:00:00Z
+================================================================================
+
+Docket No. FDA-2015-D-3719 for &quot;Draft Guidances Relating to the Regulation of Human Cells, Tissues, and Cellular and Tissue-Based Products; Rescheduling of Public Hearing; Request for Comments<br/><br/>1. Withdraw the four HCT/P guidance documents<br/>2. Get out of the business of regulating a person&#39;s use of his own body parts<br/>3. Continue access to responsible stem cell therapy that uses the patients&#39; own tissue
+
+================================================================================
+COMMENT ID: FDA-2015-D-3719-0077
+DATE: 2016-09-28T04:00:00Z
+================================================================================
+
+Withdraw the four HCT/P guidance documents.<br/>Get out of the business of regulating a person&#39;s use of his own body parts.<br/>Continue access to responsible stem cell therapy that uses the patients&#39; own tissue.
+
+================================================================================
+COMMENT ID: FDA-2015-D-3719-0100
+DATE: 2016-09-28T04:00:00Z
+================================================================================
+
+I agree on guidelines promoting safety to all (transmitting communicable diseases), but let doctors practice a technique that will no doubt revolutionize the future of medicine.  <br/><br/>Stem cell therapy has already proven to help thousands. We need to get that number into the millions.
+
+================================================================================
+COMMENT ID: FDA-2015-D-3719-0119
+DATE: 2016-09-28T04:00:00Z
+================================================================================
+
+Hi there,<br/><br/>I would very much like for there to be a possibility of personalized stem cell treatment in the future. Please overturn the ruling that banked stem cells are drugs.<br/><br/>Best regards,<br/>Lisa Keenan
+
+================================================================================
+COMMENT ID: FDA-2015-D-3719-0105
+DATE: 2016-09-28T04:00:00Z
+================================================================================
+
+I am not in favor of the HCT/P regulations.  I believe that the responsible use of stem cell therapy that uses a patient&#39;s own tissue should be allowed without regulation by the FDA.  It appears to be an innovative and helpful therapy for many uses and should be available to those seeking it.  I personally know of a number of people who have benefited from the orthopedic use of such treatments.  The benefits of having such treatments available using a patient&#39;s own tissue  should be permitted.<br/>
+

@@ -20,15 +20,11 @@ env/
 dist/
 build/
 
-# Data files (large/generated)
-data/raw/*.json
-data/raw/*.csv
-data/raw/*.txt
+# Data files (generated)
 data/processed/
 data/outputs/
 
 # Keep directory structure
-!data/raw/.gitkeep
 !data/processed/.gitkeep
 !data/outputs/.gitkeep
 
