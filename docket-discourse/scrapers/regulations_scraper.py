@@ -367,7 +367,7 @@ class RegulationsScraper:
             # Fetch and process full comment
             detail = self.fetch_comment_detail(comment_id)
             if detail:
-                processed = self.process_comment(detail)
+                processed = self.process_comment(detail["data"])
                 processed_comments.append(processed)
                 processed_ids.add(comment_id)
 
