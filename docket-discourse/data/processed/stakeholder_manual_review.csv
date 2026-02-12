@@ -1,0 +1,48 @@
+comment_id,submitter_name,stakeholder_category,confidence,score,signals,credentials,word_count,comment_type
+FDA-2015-D-3719-0004,,healthcare_provider,low,1.0,tech_density_high:3.7,,108,technical_document
+FDA-2015-D-3719-0003,,healthcare_provider,low,2.5,keywords:1; credentials:do,do,635,technical_document
+FDA-2015-D-3719-0005,,healthcare_provider,low,3.5,"possessives:13; credentials:Do,do","Do, do",2,personal_narrative
+FDA-2015-D-3719-0006,,patient_advocate,low,1.5,keywords:1; tech_density_low:0.0,,126,personal_narrative
+FDA-2015-D-3719-0007,,researcher,low,3.5,keywords:2; credentials:Phd,Phd,3,personal_narrative
+FDA-2015-D-3719-0009,,patient,low,2.5,possessives:11; tech_density_low:0.2,do,437,personal_narrative
+FDA-2015-D-3719-0008,,healthcare_provider,low,1.0,tech_density_high:5.4,,56,technical_document
+FDA-2015-D-3719-0010,,patient,low,2.0,possessives:5,,146,personal_narrative
+FDA-2015-D-3719-0011,,patient,low,4.0,keywords:2; possessives:14,do,437,personal_narrative
+FDA-2015-D-3719-0013,,patient,low,3.5,keywords:1; possessives:27; tech_density_low:0.4,,2,personal_narrative
+FDA-2015-D-3719-0014,,healthcare_provider,low,2.5,tech_density_high:2.0; credentials:do,do,147,technical_document
+FDA-2015-D-3719-0016,,patient,low,0.5,tech_density_low:0.0,,35,personal_narrative
+FDA-2015-D-3719-0015,,patient,low,3.0,keywords:1; possessives:4,do,182,personal_narrative
+FDA-2015-D-3719-0017,,healthcare_provider,low,1.0,tech_density_high:2.2,,92,personal_narrative
+FDA-2015-D-3719-0022,,patient,low,0.5,tech_density_low:0.6,,166,personal_narrative
+FDA-2015-D-3719-0024,,patient,low,1.0,keywords:1,,165,personal_narrative
+FDA-2015-D-3719-0023,,patient_advocate,low,3.0,keywords:1; possessives:5; tech_density_low:1.3,,228,personal_narrative
+FDA-2015-D-3719-0019,,healthcare_provider,low,3.0,possessives:10; tech_density_high:2.7; credentials:do,do,185,personal_narrative
+FDA-2015-D-3719-0020,,patient_advocate,low,2.5,keywords:2; tech_density_low:0.0,,22,personal_narrative
+FDA-2015-D-3719-0025,,patient_advocate,low,4.0,keywords:2; possessives:10; tech_density_low:1.0,"n.p, N.p, do",3,personal_narrative
+FDA-2015-D-3719-0026,,researcher,low,3.0,keywords:2; tech_density_high:6.3,do,653,technical_document
+FDA-2015-D-3719-0027,,healthcare_provider,low,4.0,"tech_density_high:6.8; credentials:MD,do","Director, President, MD, M.D, do",10,personal_narrative
+FDA-2015-D-3719-0044,,healthcare_provider,low,1.0,tech_density_high:1.9,,108,personal_narrative
+FDA-2015-D-3719-0066,,healthcare_provider,low,1.0,tech_density_high:4.7,,107,personal_narrative
+FDA-2015-D-3719-0090,,patient,low,2.0,possessives:4,,124,personal_narrative
+FDA-2015-D-3719-0091,,healthcare_provider,low,2.5,tech_density_high:3.7; credentials:do,do,54,technical_document
+FDA-2015-D-3719-0051,,healthcare_provider,low,1.0,tech_density_high:9.5,,21,technical_document
+FDA-2015-D-3719-0069,,patient,low,2.5,possessives:19; tech_density_low:0.7,do,588,personal_narrative
+FDA-2015-D-3719-0080,,healthcare_provider,low,3.0,possessives:11; tech_density_high:3.7; credentials:do,do,191,personal_narrative
+FDA-2015-D-3719-0092,,general_public,low,2.5,keywords:2; tech_density_low:0.0,,40,personal_narrative
+FDA-2015-D-3719-0093,,healthcare_provider,low,1.0,tech_density_high:10.0,,20,technical_document
+FDA-2015-D-3719-0095,,patient,low,4.0,keywords:2; possessives:31,do,852,personal_narrative
+FDA-2015-D-3719-0043,,healthcare_provider,low,1.0,tech_density_high:5.0,,3,personal_narrative
+FDA-2015-D-3719-0096,,healthcare_provider,low,1.0,tech_density_high:9.1,,11,technical_document
+FDA-2015-D-3719-0067,,patient,low,2.0,possessives:6,,89,personal_narrative
+FDA-2015-D-3719-0126,,healthcare_provider,low,2.5,tech_density_high:3.1; credentials:do,do,65,personal_narrative
+FDA-2015-D-3719-0031,,industry,low,2.0,keywords:1; tech_density_high:4.2,,479,personal_narrative
+FDA-2015-D-3719-0070,,healthcare_provider,low,1.0,tech_density_high:11.7,,60,technical_document
+FDA-2015-D-3719-0077,,healthcare_provider,low,1.0,tech_density_high:9.4,,32,technical_document
+FDA-2015-D-3719-0100,,healthcare_provider,low,1.0,tech_density_high:2.3,,44,technical_document
+FDA-2015-D-3719-0119,,healthcare_provider,low,1.0,tech_density_high:3.1,,32,technical_document
+FDA-2015-D-3719-0045,,patient,low,0.5,tech_density_low:0.0,,31,personal_narrative
+FDA-2015-D-3719-0046,,healthcare_provider,low,1.5,credentials:DO,DO,52,personal_narrative
+FDA-2015-D-3719-0060,,patient,low,2.5,possessives:6; tech_density_low:0.0,,123,personal_narrative
+FDA-2015-D-3719-0075,,healthcare_provider,low,1.0,tech_density_high:7.1,,56,personal_narrative
+FDA-2015-D-3719-0105,,healthcare_provider,low,1.0,tech_density_high:3.5,,86,technical_document
+FDA-2015-D-3719-0052,,patient,low,2.5,possessives:4; tech_density_low:0.0,,77,personal_narrative

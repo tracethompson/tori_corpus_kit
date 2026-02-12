@@ -1,0 +1,33 @@
+{
+  "personal_narratives": {
+    "total": 256,
+    "avg_per_doc": 7.111111111111111,
+    "distribution": {
+      "my": 221,
+      "myself": 8,
+      "ourselves": 5,
+      "our": 22
+    },
+    "categories": {
+      "health": 27,
+      "other": 146,
+      "family": 12,
+      "body": 54,
+      "treatment": 10,
+      "research": 2,
+      "organization": 5
+    }
+  },
+  "technical_documents": {
+    "total": 5,
+    "avg_per_doc": 0.35714285714285715,
+    "distribution": {
+      "my": 5
+    },
+    "categories": {
+      "other": 2,
+      "body": 1,
+      "family": 2
+    }
+  }
+}

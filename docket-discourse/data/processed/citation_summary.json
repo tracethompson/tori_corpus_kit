@@ -1,0 +1,26 @@
+{
+  "total_citations": 449,
+  "cfr_sections": {
+    "1271": 22,
+    "1271.3": 8,
+    "1271.10": 6,
+    "1271.15": 6,
+    "null": 5,
+    "1271.150": 2,
+    "12.71": 2,
+    "150": 1
+  },
+  "phsa_sections": {
+    "361": 3,
+    "351": 1
+  },
+  "technical_terms": {},
+  "by_stakeholder": {
+    "unknown": {
+      "guidance": 171,
+      "technical_terms": 222,
+      "cfr": 52,
+      "phsa": 4
+    }
+  }
+}

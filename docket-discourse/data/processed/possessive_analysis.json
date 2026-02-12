@@ -1,0 +1,2109 @@
+{
+  "total_possessives": 261,
+  "possessive_distribution": {
+    "my": 226,
+    "myself": 8,
+    "ourselves": 5,
+    "our": 22
+  },
+  "category_distribution": {
+    "other": 148,
+    "health": 27,
+    "family": 14,
+    "body": 55,
+    "treatment": 10,
+    "research": 2,
+    "organization": 5
+  },
+  "contexts": [
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "The terminology used in the draft guidance is in my view not sufficiently descriptive of the challenges facing the use",
+      "category": "other",
+      "position": 9,
+      "comment_id": "FDA-2015-D-3719-0004"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "Dear FDA and all others who are in charge of my health, After 22 years of seeing the same Neurologist who",
+      "category": "health",
+      "position": 39,
+      "comment_id": "FDA-2015-D-3719-0005"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "would do whatever it takes if I could just get my legs bac~ where they were. To walk a mile with",
+      "category": "other",
+      "position": 151,
+      "comment_id": "FDA-2015-D-3719-0005"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "legs bac~ where they were. To walk a mile with my daughter, 9_et up with out spastic leg_s. To be~ able",
+      "category": "family",
+      "position": 162,
+      "comment_id": "FDA-2015-D-3719-0005"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "with out spastic leg_s. To be~ able to focus on my work instead of fighting to have the right to do",
+      "category": "other",
+      "position": 176,
+      "comment_id": "FDA-2015-D-3719-0005"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "go on and on. If I want to to use my own cells or bone marrow or whatever to help myself",
+      "category": "body",
+      "position": 208,
+      "comment_id": "FDA-2015-D-3719-0005"
+    },
+    {
+      "possessive": "myself",
+      "type": "first_person_singular",
+      "context": "my own cells or bone marrow or whatever to help myself why won't you let me? Why would you want to",
+      "category": "other",
+      "position": 218,
+      "comment_id": "FDA-2015-D-3719-0005"
+    },
+    {
+      "possessive": "ourselves",
+      "type": "first_person_plural",
+      "context": "Do not let this happen!!! Let us try and help ourselves. We just want to be healthy. Our bodies are our",
+      "category": "other",
+      "position": 248,
+      "comment_id": "FDA-2015-D-3719-0005"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "try and help ourselves. We just want to be healthy. Our bodies are our bodie~f we can benefit and repair ourselves",
+      "category": "other",
+      "position": 255,
+      "comment_id": "FDA-2015-D-3719-0005"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "ourselves. We just want to be healthy. Our bodies are our bodie~f we can benefit and repair ourselves with ourselves why",
+      "category": "other",
+      "position": 258,
+      "comment_id": "FDA-2015-D-3719-0005"
+    },
+    {
+      "possessive": "ourselves",
+      "type": "first_person_plural",
+      "context": "Our bodies are our bodie~f we can benefit and repair ourselves with ourselves why would you want to control that and",
+      "category": "other",
+      "position": 265,
+      "comment_id": "FDA-2015-D-3719-0005"
+    },
+    {
+      "possessive": "ourselves",
+      "type": "first_person_plural",
+      "context": "are our bodie~f we can benefit and repair ourselves with ourselves why would you want to control that and stop tt?",
+      "category": "other",
+      "position": 267,
+      "comment_id": "FDA-2015-D-3719-0005"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "am as I am still trying to work. I want my life, I want it back please, please help me try",
+      "category": "health",
+      "position": 293,
+      "comment_id": "FDA-2015-D-3719-0005"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "me try not to get worse. MS as taken over my body, don't you as well. • / / - ;)",
+      "category": "body",
+      "position": 324,
+      "comment_id": "FDA-2015-D-3719-0005"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "Took my wife and had the stemgenics done and saw an increase",
+      "category": "family",
+      "position": 1,
+      "comment_id": "FDA-2015-D-3719-0006"
+    },
+    {
+      "possessive": "myself",
+      "type": "first_person_singular",
+      "context": "See attached file(s) [MANUAL ATTACHMENT TEXT] To introduce myself, Joan G. Woodward, age 58, consulting engineer with Primary Progressive",
+      "category": "other",
+      "position": 8,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "engineer with Primary Progressive Multiple Sclerosis. In the beginning of my “cellular” journey I was 33 years old having been married",
+      "category": "other",
+      "position": 25,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "of immunologic tolerance to the genetically foreign pregnancy tissues.” Apparently, my body was not recognizing the pregnancies as such and my",
+      "category": "body",
+      "position": 189,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "my body was not recognizing the pregnancies as such and my immune system was literally killing the embryos. Similar to immunizing",
+      "category": "other",
+      "position": 199,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "immune system was literally killing the embryos. Similar to immunizing our children against known diseases, the LIT therapy consisted of two",
+      "category": "family",
+      "position": 210,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "thanks to the efforts of science and the medical community. My procedures did not involve drugs and both my husband and",
+      "category": "treatment",
+      "position": 249,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "medical community. My procedures did not involve drugs and both my husband and I were extensively screened for all diseases prior",
+      "category": "family",
+      "position": 257,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "I were extensively screened for all diseases prior to immunizing my arms with his white blood cells. We signed all waivers",
+      "category": "other",
+      "position": 270,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "FDA brought all clinics offering this treatment to a halt: My father and I share A‐ blood. During a procedure in",
+      "category": "body",
+      "position": 307,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "a procedure in Winter Park, Florida the hospital stock piled my blood in case an infusion was necessary. The hospital did",
+      "category": "body",
+      "position": 325,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "Atlanta, GA. I had a single lesion which appeared on my brain stem MRI. It took until September 2, 2014 for",
+      "category": "other",
+      "position": 470,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "and have exhausted nearly all avenues. Multiple MRI’s have shown my disease to be progressing. The clinical trial drug is a",
+      "category": "health",
+      "position": 555,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "was receiving the placebo, or the drug was not helping my symptoms. Therefore, this past week my family and I elected",
+      "category": "health",
+      "position": 584,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "drug was not helping my symptoms. Therefore, this past week my family and I elected for me to receive mesenchymal stem",
+      "category": "family",
+      "position": 590,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "elected for me to receive mesenchymal stem cells harvested from my own adipose tissue. Literally, my fat may save me! After",
+      "category": "body",
+      "position": 604,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "mesenchymal stem cells harvested from my own adipose tissue. Literally, my fat may save me! After carefully researching several clinics, protocols",
+      "category": "body",
+      "position": 609,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "researching several clinics, protocols and Doctors, I chose Stemgenex as my provider. My cells, my blood, and my decision. How could",
+      "category": "body",
+      "position": 626,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "clinics, protocols and Doctors, I chose Stemgenex as my provider. My cells, my blood, and my decision. How could this possibly",
+      "category": "body",
+      "position": 628,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "and Doctors, I chose Stemgenex as my provider. My cells, my blood, and my decision. How could this possibly be considered",
+      "category": "body",
+      "position": 630,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "chose Stemgenex as my provider. My cells, my blood, and my decision. How could this possibly be considered a New Investigational",
+      "category": "other",
+      "position": 633,
+      "comment_id": "FDA-2015-D-3719-0007"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "or more of research, looking for other options to extend my life with a better quality, I decided to undergo treatment",
+      "category": "health",
+      "position": 86,
+      "comment_id": "FDA-2015-D-3719-0009"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "know that an eventual cure will involve stem cells. From my research and my personal experience with the treatments, I have",
+      "category": "research",
+      "position": 121,
+      "comment_id": "FDA-2015-D-3719-0009"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "eventual cure will involve stem cells. From my research and my personal experience with the treatments, I have undergone three of",
+      "category": "family",
+      "position": 124,
+      "comment_id": "FDA-2015-D-3719-0009"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "suffered in 2011. One cannot deny the improvements, not even my following physicians. <br/><br/>The FDA approved a lot of drugs last",
+      "category": "treatment",
+      "position": 175,
+      "comment_id": "FDA-2015-D-3719-0009"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "of drugs last year, did these all undergo scrupulous trials? My guess, is NO. <br/><br/>I believe that until the FDA, NIH,",
+      "category": "other",
+      "position": 193,
+      "comment_id": "FDA-2015-D-3719-0009"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "other agencies put strict regulations on the right to use my own cells as a method of treatment that they do",
+      "category": "body",
+      "position": 219,
+      "comment_id": "FDA-2015-D-3719-0009"
+    },
+    {
+      "possessive": "myself",
+      "type": "first_person_singular",
+      "context": "to promote an increase in medical tourism. I considered it myself prior to locating the fine people at StemGenex. <br/><br/>PLEASE ....",
+      "category": "other",
+      "position": 278,
+      "comment_id": "FDA-2015-D-3719-0009"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "your consideration in bringing these and keeping these treatments, using my own cells, to the forefront and stop putting absurd road",
+      "category": "body",
+      "position": 349,
+      "comment_id": "FDA-2015-D-3719-0009"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "to the forefront and stop putting absurd road blocks in our way. I am all too aware of the fraud, and",
+      "category": "other",
+      "position": 362,
+      "comment_id": "FDA-2015-D-3719-0009"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "aware of the fraud, and unscrupulous individuals who reside in our society, however, one must do their research. As a governing",
+      "category": "other",
+      "position": 378,
+      "comment_id": "FDA-2015-D-3719-0009"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "California 2-1/2 years ago and had stem cell therapy on my left knee which had arthritis and a torn meniscus. I",
+      "category": "other",
+      "position": 13,
+      "comment_id": "FDA-2015-D-3719-0008"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "and no longer take anti inflammatory drugs. They used only my stem cells harvested from abdominal fat. I would consider this",
+      "category": "body",
+      "position": 39,
+      "comment_id": "FDA-2015-D-3719-0008"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "I had the stem cell therapy I found improvement in my energy level, better bladder control and felt stronger. But, with",
+      "category": "other",
+      "position": 25,
+      "comment_id": "FDA-2015-D-3719-0010"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "it worth the out of pocket expenses of over $15,000.00 my answer is no. I continue to get worse with the",
+      "category": "other",
+      "position": 58,
+      "comment_id": "FDA-2015-D-3719-0010"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "cell transplant which includes high doses of chemotherapy. Basically destroying my immune system and giving me a new immune system. Without",
+      "category": "other",
+      "position": 96,
+      "comment_id": "FDA-2015-D-3719-0010"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "no reason people should have stem cell therapy. This is my case and everyone is different. Stem cell therapy is in",
+      "category": "other",
+      "position": 122,
+      "comment_id": "FDA-2015-D-3719-0010"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "case and everyone is different. Stem cell therapy is in my openion a shot term help. HSCT will halt MS in",
+      "category": "other",
+      "position": 133,
+      "comment_id": "FDA-2015-D-3719-0010"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "Stemgenex in February of 2015. In 2014 despite continued biologics (my 4th one) use and increased oral and injectable steroids my",
+      "category": "other",
+      "position": 83,
+      "comment_id": "FDA-2015-D-3719-0011"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "(my 4th one) use and increased oral and injectable steroids my health detiorated and my labs were incresaing in value (not",
+      "category": "health",
+      "position": 93,
+      "comment_id": "FDA-2015-D-3719-0011"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "and increased oral and injectable steroids my health detiorated and my labs were incresaing in value (not a good thing). I",
+      "category": "other",
+      "position": 97,
+      "comment_id": "FDA-2015-D-3719-0011"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "able to work but that was not a realistic option. My rheumatologist had reached her comfort level in prescribing biologics and",
+      "category": "other",
+      "position": 159,
+      "comment_id": "FDA-2015-D-3719-0011"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "led me to Stemgenex in LaJolla California which literally saved my life. I work in the pharmaceutical industry (biologics) and I",
+      "category": "health",
+      "position": 204,
+      "comment_id": "FDA-2015-D-3719-0011"
+    },
+    {
+      "possessive": "myself",
+      "type": "first_person_singular",
+      "context": "first line option is key to healing individuals such as myself and for the future of medicine. The cost of one",
+      "category": "other",
+      "position": 246,
+      "comment_id": "FDA-2015-D-3719-0011"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "was about the same as 3 months of therapy that my insurance company was paying for my biologics and other medicines.",
+      "category": "organization",
+      "position": 268,
+      "comment_id": "FDA-2015-D-3719-0011"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "months of therapy that my insurance company was paying for my biologics and other medicines. Literally had I been able to",
+      "category": "other",
+      "position": 274,
+      "comment_id": "FDA-2015-D-3719-0011"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "been able to try this therapy first instead of last my insurance and the system would have saved thousands of dollars",
+      "category": "other",
+      "position": 292,
+      "comment_id": "FDA-2015-D-3719-0011"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "paying over the last 9 years. Within 3 months of my therapy I was able to dose down/off all of my",
+      "category": "treatment",
+      "position": 318,
+      "comment_id": "FDA-2015-D-3719-0011"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "my therapy I was able to dose down/off all of my rheumatoid arthritis medicines-I only take hormones for age and synthroid",
+      "category": "other",
+      "position": 328,
+      "comment_id": "FDA-2015-D-3719-0011"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "thyroid. I am pain free and I have just celebrated my one year anniversary of my stem cell therapy by Stemgenex.",
+      "category": "other",
+      "position": 350,
+      "comment_id": "FDA-2015-D-3719-0011"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "and I have just celebrated my one year anniversary of my stem cell therapy by Stemgenex. Without this therapy I am",
+      "category": "treatment",
+      "position": 355,
+      "comment_id": "FDA-2015-D-3719-0011"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "would have been a greater cost to the system and my life would have Zero quality. I wish you could hear",
+      "category": "health",
+      "position": 386,
+      "comment_id": "FDA-2015-D-3719-0011"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "TEXT] I was diagnosed with Parkinson’s the spring of 2014. My conditions were not getting better and by May of 2015",
+      "category": "health",
+      "position": 15,
+      "comment_id": "FDA-2015-D-3719-0012"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "wanted treatment in the US using adipose tissue, even though my research indicated that the best results were coming from fetal",
+      "category": "research",
+      "position": 65,
+      "comment_id": "FDA-2015-D-3719-0012"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "the clinic that I determined had the best answers to my q uestions . Since my treatment my conditions have improved",
+      "category": "other",
+      "position": 97,
+      "comment_id": "FDA-2015-D-3719-0012"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "had the best answers to my q uestions . Since my treatment my conditions have improved and the amount of medication",
+      "category": "health",
+      "position": 102,
+      "comment_id": "FDA-2015-D-3719-0012"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "best answers to my q uestions . Since my treatment my conditions have improved and the amount of medication I use",
+      "category": "health",
+      "position": 104,
+      "comment_id": "FDA-2015-D-3719-0012"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "down. While the treatment was not inexpensive it was within my reach. I think the government’s role in stem cell treatment",
+      "category": "other",
+      "position": 127,
+      "comment_id": "FDA-2015-D-3719-0012"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "2b A tO: 31 To The Federal Drug Administration : My name is Isabel Lucas and I am from Calabash ,",
+      "category": "other",
+      "position": 23,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "years old and I would like this opportunity to explain my parkinson 's disease and the stem cell treatment I received",
+      "category": "health",
+      "position": 50,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "at Duke University Movement Disorder Clinic in 201 0 when my symptoms first appeared at 58 years old. After 2 years",
+      "category": "health",
+      "position": 82,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "1 00 mg tablets 4x a day. This did control my severe right leg tremors and slight right hand tremors for",
+      "category": "other",
+      "position": 166,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "leg tremors and slight right hand tremors for awhile. As my body got use to the medications that are 50 years",
+      "category": "body",
+      "position": 179,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "I noticed a reduction in effectiveness . I then started my search for a cure or remission of symptoms . I",
+      "category": "other",
+      "position": 201,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "Genex and called to learn more about their procedures for my disease. The cost of the treatment was $15,000. Money I",
+      "category": "health",
+      "position": 240,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "was $15,000. Money I did not have. When I received my first VA disability check I decided that after going to",
+      "category": "other",
+      "position": 257,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "Stem Genex and paid for their treatment. Upon arriving with my spouse and several patients with parkinson disease, we were professionally",
+      "category": "other",
+      "position": 306,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "anxiety was gone. The procedure was painless during harvesting of my own adipose tissue and after processing my stem cells, they",
+      "category": "body",
+      "position": 354,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "during harvesting of my own adipose tissue and after processing my stem cells, they were injected up into my nose and",
+      "category": "body",
+      "position": 361,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "after processing my stem cells, they were injected up into my nose and given to me through IV therapy over a",
+      "category": "other",
+      "position": 369,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "again examined by the doctor and questions were answered . My bandages were changed and I was discharged to go home",
+      "category": "other",
+      "position": 413,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "and I was discharged to go home at 11 AM. My spouse and I spent the entire day sightseeing with friends",
+      "category": "other",
+      "position": 427,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "I spent the entire day sightseeing with friends before boarding our flight home at 6PMto NC. Within 1 week I noticed",
+      "category": "other",
+      "position": 440,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "flight home at 6PMto NC. Within 1 week I noticed my sense of smell coming back. Something I had lost years",
+      "category": "other",
+      "position": 451,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "before. Then gradually over the next few weeks I noticed my right sided tremors were decreasing and I could take less",
+      "category": "other",
+      "position": 472,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "the improvement everyone noticed. I finally went down to taking my medication only once in the morning and did not need",
+      "category": "other",
+      "position": 506,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "need it the rest of the day for several months. My energy level improved greatly and so did my constipation issues.",
+      "category": "other",
+      "position": 526,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "several months. My energy level improved greatly and so did my constipation issues. Gradually over the next 2 years, I needed",
+      "category": "other",
+      "position": 534,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "Gradually over the next 2 years, I needed to increase my medication back to where I was initially, but was not",
+      "category": "other",
+      "position": 547,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "FDA has not approved a procedure that simply gave me my life back. I need another procedure but cannot afford it.",
+      "category": "health",
+      "position": 594,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "well. I am now full of fear and anxiety because my voice cannot be heard. Please take the time to reconsider",
+      "category": "other",
+      "position": 642,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "the evidence I have given to you. The rest of my young life is in your hands and I have given",
+      "category": "health",
+      "position": 663,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "I have given you the keys to the future of my peace and happiness and others afflicted with this horrible debilitating",
+      "category": "other",
+      "position": 681,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "others afflicted with this horrible debilitating disease. I have served my county well and am very proud to be a female",
+      "category": "other",
+      "position": 696,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "proud to be a female veteran. Now that I need my government , please don't let me down. Sincerely representing parkinson",
+      "category": "other",
+      "position": 712,
+      "comment_id": "FDA-2015-D-3719-0013"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "I want to comment in favor of Stem Cells. My wife is now 59 and diagnosed at 50 with early",
+      "category": "family",
+      "position": 9,
+      "comment_id": "FDA-2015-D-3719-0014"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "normal live births. The donors are tested every month and my wife is tested prior to each treatment. Stem Cells do",
+      "category": "family",
+      "position": 45,
+      "comment_id": "FDA-2015-D-3719-0014"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "suffered from Rheumatoid Arthritis for over 30 years now, and my right knee became so painful that i could barely put",
+      "category": "other",
+      "position": 11,
+      "comment_id": "FDA-2015-D-3719-0015"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "knee replacement surgery, even though at 50 yrs of age, my doctor said I was a tad young to do so.",
+      "category": "treatment",
+      "position": 47,
+      "comment_id": "FDA-2015-D-3719-0015"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "I received a stemcell treatment directly into the knee (using my own abdominal stemcells) and about 8 weeks after the injection,",
+      "category": "body",
+      "position": 82,
+      "comment_id": "FDA-2015-D-3719-0015"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "own abdominal stemcells) and about 8 weeks after the injection, my pain completely subsided and I was able to walk much",
+      "category": "health",
+      "position": 93,
+      "comment_id": "FDA-2015-D-3719-0015"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "energy to move across country 6 months later and helped my walking. I find it deplorable that I could not have",
+      "category": "other",
+      "position": 28,
+      "comment_id": "FDA-2015-D-3719-0017"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "walking. I find it deplorable that I could not have my own stem cells frozen for continued use after a 1",
+      "category": "body",
+      "position": 39,
+      "comment_id": "FDA-2015-D-3719-0017"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "for continued use after a 1 year period. Why are my stem cells thrown away after a 24 hour period is",
+      "category": "body",
+      "position": 54,
+      "comment_id": "FDA-2015-D-3719-0017"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "in bed, have problematic bladder issues, and difficulties in lifting my right leg.<br/>All of the above mentioned issues have improved since",
+      "category": "other",
+      "position": 75,
+      "comment_id": "FDA-2015-D-3719-0022"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "or medications that could slow or inhibit the progression of my disease.<br/>My treatment consisted of immune suppression therapy, and high doses",
+      "category": "health",
+      "position": 66,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "of steroids every month. The side effects were horrendous, and my disease progressed.<br/>I was 43 years old, a wife, and a",
+      "category": "health",
+      "position": 87,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "therapies were being studied, and positive results were being seen. My husband and I decided that this was our only hope,",
+      "category": "family",
+      "position": 202,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "being seen. My husband and I decided that this was our only hope, and made the decision to have stem cell",
+      "category": "other",
+      "position": 210,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "not a cure, but a treatment that could possibly reset my immune system and alleviate my MS symptoms of extreme fatigue,",
+      "category": "other",
+      "position": 239,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "treatment that could possibly reset my immune system and alleviate my MS symptoms of extreme fatigue, brain fog, inability to stand",
+      "category": "health",
+      "position": 244,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "StemGenex, and had the treatment here in the United States. My own stem cells were harvested from my adipose tissue, and",
+      "category": "body",
+      "position": 281,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "the United States. My own stem cells were harvested from my adipose tissue, and re-introduced into my body thru IV, and",
+      "category": "body",
+      "position": 288,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "cells were harvested from my adipose tissue, and re-introduced into my body thru IV, and localized injections.<br/>I experienced no negative side",
+      "category": "body",
+      "position": 294,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "side effects! Within 24 hours, I started feeling much better, my balance started to return, I came home to do a",
+      "category": "other",
+      "position": 314,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "return, I came home to do a yoga poise for my kids! Within in 3 months, my fog had cleared, my",
+      "category": "other",
+      "position": 328,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "a yoga poise for my kids! Within in 3 months, my fog had cleared, my energy had increased. I was able",
+      "category": "other",
+      "position": 334,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "my kids! Within in 3 months, my fog had cleared, my energy had increased. I was able to fix dinner for",
+      "category": "other",
+      "position": 338,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "energy had increased. I was able to fix dinner for my kids....this may seem inconsequential to most, but to me, it",
+      "category": "other",
+      "position": 349,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "to me, it was HUGE! I was off all medications, my depression had gone away, I had HOPE!! <br/><br/>I implore you",
+      "category": "other",
+      "position": 367,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "is the best possible treatment we have!! It has saved my insurance company tens of thousands in expensive medications. But most",
+      "category": "organization",
+      "position": 412,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "expensive medications. But most of all it has given me my life back! I am a mother and a wife again!",
+      "category": "health",
+      "position": 429,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "life back! I am a mother and a wife again! My MRI&#39;s continue to show that since my stem cell therapy,",
+      "category": "other",
+      "position": 440,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "a wife again! My MRI&#39;s continue to show that since my stem cell therapy, I have had no new lesions in",
+      "category": "treatment",
+      "position": 447,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "stem cell therapy, I have had no new lesions in my brain or my spinal cord, and they have even shown",
+      "category": "other",
+      "position": 458,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "I have had no new lesions in my brain or my spinal cord, and they have even shown slight re-myelination. Imagine",
+      "category": "other",
+      "position": 461,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "old and I still have MS, but I have shocked my doctors that I am still on my feet, and functioning.",
+      "category": "treatment",
+      "position": 512,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "I have shocked my doctors that I am still on my feet, and functioning. I know that with additional stem cell",
+      "category": "other",
+      "position": 519,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "is showing such positive results!! <br/>Please do not take away my treatment options, and my HOPE for the future.<br/>",
+      "category": "treatment",
+      "position": 562,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "results!! <br/>Please do not take away my treatment options, and my HOPE for the future.<br/>",
+      "category": "other",
+      "position": 566,
+      "comment_id": "FDA-2015-D-3719-0021"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "US for one last try to have a treatment with my own fat derived MSCs. My quality of life has improved",
+      "category": "body",
+      "position": 33,
+      "comment_id": "FDA-2015-D-3719-0024"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "to have a treatment with my own fat derived MSCs. My quality of life has improved with increased strength, breathing, range",
+      "category": "health",
+      "position": 38,
+      "comment_id": "FDA-2015-D-3719-0024"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "of cellular therapy regulation. Glad to see some responsiveness, after our advocacy group Patients For Stem Cells helped drive a record",
+      "category": "organization",
+      "position": 22,
+      "comment_id": "FDA-2015-D-3719-0023"
+    },
+    {
+      "possessive": "myself",
+      "type": "first_person_singular",
+      "context": "access to this therapy, especially for no option patients like myself. <br/><br/>Now that Sen. Mark Kirk has brought the REGROW Act",
+      "category": "other",
+      "position": 77,
+      "comment_id": "FDA-2015-D-3719-0023"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "had exhausted all medical options for MS. An update on my progress, after my 4th treatment at Celltex with stem cells",
+      "category": "other",
+      "position": 141,
+      "comment_id": "FDA-2015-D-3719-0023"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "medical options for MS. An update on my progress, after my 4th treatment at Celltex with stem cells from my own",
+      "category": "treatment",
+      "position": 144,
+      "comment_id": "FDA-2015-D-3719-0023"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "after my 4th treatment at Celltex with stem cells from my own adipose tissue, I&#39;ve been in remission from secondary progressive",
+      "category": "body",
+      "position": 153,
+      "comment_id": "FDA-2015-D-3719-0023"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "I have Muscular Dystrohpy, stem cell therapy has helped my body to heal and function better. Improved reaction time, neural",
+      "category": "body",
+      "position": 9,
+      "comment_id": "FDA-2015-D-3719-0019"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "reaction time, neural pathways seem to be firing off quicker. My experience with stem cell therapy has always been positive, I",
+      "category": "other",
+      "position": 27,
+      "comment_id": "FDA-2015-D-3719-0019"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "I have never been given false hope and have experienced my own positive results based on trial. My stem cells are",
+      "category": "other",
+      "position": 47,
+      "comment_id": "FDA-2015-D-3719-0019"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "and have experienced my own positive results based on trial. My stem cells are my own, if I could access them",
+      "category": "body",
+      "position": 54,
+      "comment_id": "FDA-2015-D-3719-0019"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "own positive results based on trial. My stem cells are my own, if I could access them myself, purify them and",
+      "category": "other",
+      "position": 58,
+      "comment_id": "FDA-2015-D-3719-0019"
+    },
+    {
+      "possessive": "myself",
+      "type": "first_person_singular",
+      "context": "stem cells are my own, if I could access them myself, purify them and activate them I would. BUT because I",
+      "category": "other",
+      "position": 65,
+      "comment_id": "FDA-2015-D-3719-0019"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "I need assistance in doing so, does NOT take away my right to do with my own body&#39;s stem cells as",
+      "category": "other",
+      "position": 85,
+      "comment_id": "FDA-2015-D-3719-0019"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "so, does NOT take away my right to do with my own body&#39;s stem cells as I see fit. Because they",
+      "category": "body",
+      "position": 90,
+      "comment_id": "FDA-2015-D-3719-0019"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "as I see fit. Because they have been taken from my body and activated does NOT mean the FDA now owns",
+      "category": "body",
+      "position": 105,
+      "comment_id": "FDA-2015-D-3719-0019"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "As much as they would like to, they are still my property. They came from me, they have no been modified",
+      "category": "other",
+      "position": 127,
+      "comment_id": "FDA-2015-D-3719-0019"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "I am a Registered Nurse, my mother is a Type 1 diabetic, and my father-in-law has",
+      "category": "family",
+      "position": 5,
+      "comment_id": "FDA-2015-D-3719-0020"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "Registered Nurse, my mother is a Type 1 diabetic, and my father-in-law has MS. Please read the attached document.",
+      "category": "body",
+      "position": 13,
+      "comment_id": "FDA-2015-D-3719-0020"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "“Dear FDA and all others who are in charge of my health, I…am on drugs that cost over 60,000 a year.",
+      "category": "health",
+      "position": 1965,
+      "comment_id": "FDA-2015-D-3719-0025"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "would do whatever it takes if I could just get my legs back where they were. To walk a mile with",
+      "category": "other",
+      "position": 2017,
+      "comment_id": "FDA-2015-D-3719-0025"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "legs back where they were. To walk a mile with my daughter, get up with out spastic legs. To be able",
+      "category": "family",
+      "position": 2028,
+      "comment_id": "FDA-2015-D-3719-0025"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "with out spastic legs. To be able to focus on my work instead of fighting to have the right to do",
+      "category": "other",
+      "position": 2042,
+      "comment_id": "FDA-2015-D-3719-0025"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "to try and get healthy…If I want to to use my own cells or bone marrow or whatever to help myself",
+      "category": "body",
+      "position": 2066,
+      "comment_id": "FDA-2015-D-3719-0025"
+    },
+    {
+      "possessive": "myself",
+      "type": "first_person_singular",
+      "context": "my own cells or bone marrow or whatever to help myself why won't you let me? We just want to be",
+      "category": "other",
+      "position": 2076,
+      "comment_id": "FDA-2015-D-3719-0025"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "won't you let me? We just want to be healthy. Our bodies are our bodies if we can benefit and repair",
+      "category": "other",
+      "position": 2088,
+      "comment_id": "FDA-2015-D-3719-0025"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "me? We just want to be healthy. Our bodies are our bodies if we can benefit and repair ourselves with ourselves",
+      "category": "other",
+      "position": 2091,
+      "comment_id": "FDA-2015-D-3719-0025"
+    },
+    {
+      "possessive": "ourselves",
+      "type": "first_person_plural",
+      "context": "bodies are our bodies if we can benefit and repair ourselves with ourselves why would you want to control that and",
+      "category": "other",
+      "position": 2099,
+      "comment_id": "FDA-2015-D-3719-0025"
+    },
+    {
+      "possessive": "ourselves",
+      "type": "first_person_plural",
+      "context": "our bodies if we can benefit and repair ourselves with ourselves why would you want to control that and stop it?”",
+      "category": "other",
+      "position": 2101,
+      "comment_id": "FDA-2015-D-3719-0025"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "this type of “clinic” outfits, which will be welcomed by our professional society. We provide detailed comments for each guidance below.",
+      "category": "other",
+      "position": 287,
+      "comment_id": "FDA-2015-D-3719-0027"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "under the Agency’s radar. Thank you for your consideration of our comments. Please contact Nuala S. Moore, Assoc. Director of Government",
+      "category": "other",
+      "position": 1246,
+      "comment_id": "FDA-2015-D-3719-0027"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "cell business you will only scree it up. It is our own body tissue so leave it alone. I have suffered",
+      "category": "body",
+      "position": 53,
+      "comment_id": "FDA-2015-D-3719-0066"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "Stem Cell transplant works. The stem cells were derived from my fat cells and injected into both of my knees. I",
+      "category": "body",
+      "position": 16,
+      "comment_id": "FDA-2015-D-3719-0090"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "derived from my fat cells and injected into both of my knees. I am too young for double knee replacements because",
+      "category": "other",
+      "position": 24,
+      "comment_id": "FDA-2015-D-3719-0090"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "I am too young for double knee replacements because of my age. I am 80-85% better and not quite done with",
+      "category": "other",
+      "position": 36,
+      "comment_id": "FDA-2015-D-3719-0090"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "pocket. I took on a second mortgage for the treatment. My insurance company would pay for bilateral knee replacements and rehab,",
+      "category": "organization",
+      "position": 71,
+      "comment_id": "FDA-2015-D-3719-0090"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "stem cell therapy. I had a rotator cuff repair on my right shoulder (75% tear on one of the four muscles).",
+      "category": "other",
+      "position": 15,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "right shoulder (75% tear on one of the four muscles). My procedure was performed in Denver Colorado by the Centeno Shultz",
+      "category": "treatment",
+      "position": 26,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "in Denver Colorado by the Centeno Shultz team of physicians. My results are both profound and impressive. I tried the regenerative",
+      "category": "other",
+      "position": 40,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "impressive. I tried the regenerative approach because so many of my 40&#39;s and 50&#39;s friends had poor results from traditional surgery",
+      "category": "other",
+      "position": 56,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "post-surgery life did not change. <br/><br/>Rotator Cuff - I tore my rotator cuff as a teen in high-school and it healed",
+      "category": "other",
+      "position": 112,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "until I was about 55. One day when working on my back in a basement crawl space with a pipe wrench",
+      "category": "other",
+      "position": 136,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "one hand, I re-injured the shoulder. It took weeks before my shoulder stopped hurting. It never did feel good at night.",
+      "category": "other",
+      "position": 158,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "on one of the daytime TV shows. Several months before my visit to Denver, they took me off several medications that",
+      "category": "other",
+      "position": 211,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "effectiveness. They brought me into the clinic and looked at my shoulder. I was referred to an MRI associate who took",
+      "category": "other",
+      "position": 239,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "referred to an MRI associate who took some pictures of my shoulder. They looked again at my shoulder and determined that",
+      "category": "other",
+      "position": 253,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "took some pictures of my shoulder. They looked again at my shoulder and determined that I was a good candidate. The",
+      "category": "other",
+      "position": 259,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "efficient but expensive. The doctors took a week to poke my torn muscle with injections of saline and platelets to get",
+      "category": "other",
+      "position": 283,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "for the stem cell injection. Ultimately, some bone marrow from my hip was separated into a yellowish stem cells injection to",
+      "category": "other",
+      "position": 306,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "hip was separated into a yellowish stem cells injection to my shoulder. They said they had to do all this stem",
+      "category": "other",
+      "position": 317,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "rules. If they could have taken more time to culture my stem cells, they have been seeing even greater success outside",
+      "category": "body",
+      "position": 346,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "have been seeing even greater success outside the US. <br/><br/>Well, my hip hurt, my shoulder hurt and I wasn&#39;t sure how",
+      "category": "other",
+      "position": 360,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "even greater success outside the US. <br/><br/>Well, my hip hurt, my shoulder hurt and I wasn&#39;t sure how well I would",
+      "category": "other",
+      "position": 363,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "up-front fee is significantly less than traditional rotator cuff costs my friends experienced. Also, I am near 100% range of motion,",
+      "category": "other",
+      "position": 463,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "FDA looking at? Try looking at the results in patients. My un-healed friends only wish they could golf or even lift",
+      "category": "other",
+      "position": 515,
+      "comment_id": "FDA-2015-D-3719-0069"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "Cellular and<br/>Tissue-Based Products; Rescheduling of Public Hearing; Request for Comments<br/><br/>Using my own stem cells, my own tissue and body parts without",
+      "category": "body",
+      "position": 24,
+      "comment_id": "FDA-2015-D-3719-0080"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "of Public Hearing; Request for Comments<br/><br/>Using my own stem cells, my own tissue and body parts without FDA interference should be",
+      "category": "body",
+      "position": 28,
+      "comment_id": "FDA-2015-D-3719-0080"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "a no brainer and a slam dunk. I mean it&#39;s my own body. How can the federal government interfere with my",
+      "category": "body",
+      "position": 49,
+      "comment_id": "FDA-2015-D-3719-0080"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "my own body. How can the federal government interfere with my privacy and autonomy right to use parts of my own",
+      "category": "other",
+      "position": 59,
+      "comment_id": "FDA-2015-D-3719-0080"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "with my privacy and autonomy right to use parts of my own body as a treatment? <br/><br/>The FDA should withdraw the",
+      "category": "body",
+      "position": 68,
+      "comment_id": "FDA-2015-D-3719-0080"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "of regulating a person&#39;s use of his own body parts. My family includes 3 breast cancer survivors, one who had a",
+      "category": "family",
+      "position": 99,
+      "comment_id": "FDA-2015-D-3719-0080"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "3 breast cancer survivors, one who had a double masectomy. My chances of getting breast cancer are higher than the general",
+      "category": "other",
+      "position": 112,
+      "comment_id": "FDA-2015-D-3719-0080"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "getting breast cancer are higher than the general population given my family history. I fell strongly that the right to use",
+      "category": "family",
+      "position": 125,
+      "comment_id": "FDA-2015-D-3719-0080"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "family history. I fell strongly that the right to use my own body parts to heal myself is my business.<br/><br/>Should this",
+      "category": "body",
+      "position": 136,
+      "comment_id": "FDA-2015-D-3719-0080"
+    },
+    {
+      "possessive": "myself",
+      "type": "first_person_singular",
+      "context": "the right to use my own body parts to heal myself is my business.<br/><br/>Should this goofy rule pass, future patients are",
+      "category": "other",
+      "position": 142,
+      "comment_id": "FDA-2015-D-3719-0080"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "to use my own body parts to heal myself is my business.<br/><br/>Should this goofy rule pass, future patients are not going",
+      "category": "other",
+      "position": 144,
+      "comment_id": "FDA-2015-D-3719-0080"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "age of 49. Through the years, even with prescription medicine, my body continued to decline. The injections destroyed muscle and tissue",
+      "category": "body",
+      "position": 49,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "continued to decline. The injections destroyed muscle and tissue in my arms, legs, bottom, and stomach. Due to my condition, I",
+      "category": "other",
+      "position": 61,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "tissue in my arms, legs, bottom, and stomach. Due to my condition, I had to take early retirement from teaching. The",
+      "category": "health",
+      "position": 69,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "had to take early retirement from teaching. The wheelchair became my main mode of transportation in public due to my lack",
+      "category": "other",
+      "position": 82,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "became my main mode of transportation in public due to my lack of balance, speed, energy, mobility, and strength.<br/><br/>In hopes of",
+      "category": "other",
+      "position": 91,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "of balance, speed, energy, mobility, and strength.<br/><br/>In hopes of improving my health, I tried to be part of MS trials in",
+      "category": "health",
+      "position": 103,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "United States and Canada. I was denied either because of my age, the clinics were not studying my specific symptoms, or",
+      "category": "organization",
+      "position": 125,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "either because of my age, the clinics were not studying my specific symptoms, or the trials were closed to the public",
+      "category": "health",
+      "position": 132,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "One deciding factor for me was that I could use my own adult stem cells. After extracting 2 teaspoons of fat",
+      "category": "other",
+      "position": 175,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "stem cells. After extracting 2 teaspoons of fat cells from my stomach area, the cells were expanded in the lab over",
+      "category": "other",
+      "position": 188,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "in Houston, receiving 200 million cells through an IV in my arm. I had a total of 8 treatments during 2011",
+      "category": "other",
+      "position": 227,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "the treatments in the United States. The FDA now considers my own stem cells to be a drug since they are",
+      "category": "body",
+      "position": 254,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "a drug since they are inserting a large number of my expanded cells back into my body.<br/><br/>Upon completing the first five",
+      "category": "body",
+      "position": 270,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "inserting a large number of my expanded cells back into my body.<br/><br/>Upon completing the first five of eight treatments I received",
+      "category": "body",
+      "position": 275,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "eight treatments I received in Houston, it was time for my yearly appointment with my neurologist. After performing the regular tests",
+      "category": "other",
+      "position": 292,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "in Houston, it was time for my yearly appointment with my neurologist. After performing the regular tests to assess my progress,",
+      "category": "other",
+      "position": 296,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "with my neurologist. After performing the regular tests to assess my progress, as well as additional tests, Dr. Jackson shook his",
+      "category": "other",
+      "position": 305,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "it.&quot; Dr. Jackson and Dr. Patton continue to marvel at my improvements and have both given their blessings for further treatments.<br/><br/>Because",
+      "category": "other",
+      "position": 379,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "of the FDA to continue treatments there. In May, 2015, my husband and I flew to Cancun, Mexico, in order for",
+      "category": "family",
+      "position": 430,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "million stem cells received through 2 treatments of IVs in my arms, I also had 100 million stem cells infused in",
+      "category": "other",
+      "position": 462,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "arms, I also had 100 million stem cells infused in my spine and 50 million in each of two of the",
+      "category": "other",
+      "position": 473,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "million in each of two of the lymph nodes in my groin. I have had no negative side effects from these",
+      "category": "other",
+      "position": 487,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "healing.<br/><br/>Benefits from stem cell treatments:<br/>* The wheelchair is no longer my main mode of transportation. I now use a walker unless",
+      "category": "other",
+      "position": 513,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "temperatures<br/>* Renewed strength, energy, balance, and mobility<br/>* Regained use of my left hand- previously, fingers stayed curled most of the time.<br/>*",
+      "category": "other",
+      "position": 552,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "fingers stayed curled most of the time.<br/>* An abrasion on my leg, caused by wearing the Bioness Walking Device, was constantly",
+      "category": "other",
+      "position": 566,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "5 years. Before, losing blood flow in the ends of my fingers was a daily occurrence during the winter months.<br/>* Can",
+      "category": "other",
+      "position": 662,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "get up from a chair without assistance<br/>* Have feeling in my left foot which I have not had in years.<br/>* When",
+      "category": "other",
+      "position": 683,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "foot which I have not had in years.<br/>* When walking, my left leg would swing in a half circle with each",
+      "category": "other",
+      "position": 695,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "would swing in a half circle with each step. Now my stride is lining up more like a normal gait.<br/>* After",
+      "category": "other",
+      "position": 708,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "like a normal gait.<br/>* After 6 weeks of physical therapy, my BERG balance score went from 35 to 44 out of",
+      "category": "other",
+      "position": 724,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "56.<br/>* Walking speed has doubled.<br/><br/>Stem cell therapy has not cured my MS, but it has definitely given me a better quality",
+      "category": "other",
+      "position": 745,
+      "comment_id": "FDA-2015-D-3719-0095"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "am disturbed by the FDA&#39;s proposed guidelines that would restrict my ability to use my own stem cells to help me",
+      "category": "other",
+      "position": 11,
+      "comment_id": "FDA-2015-D-3719-0067"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "FDA&#39;s proposed guidelines that would restrict my ability to use my own stem cells to help me with medical issues. I",
+      "category": "body",
+      "position": 15,
+      "comment_id": "FDA-2015-D-3719-0067"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "stem cells to help me with medical issues. I consider my cells a part of my body and would not like",
+      "category": "body",
+      "position": 27,
+      "comment_id": "FDA-2015-D-3719-0067"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "with medical issues. I consider my cells a part of my body and would not like the FDA to interfere with",
+      "category": "body",
+      "position": 32,
+      "comment_id": "FDA-2015-D-3719-0067"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "body and would not like the FDA to interfere with my right to use those cells any way I see fit.",
+      "category": "other",
+      "position": 43,
+      "comment_id": "FDA-2015-D-3719-0067"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "refrain from restricting use of stem cells for procedures to my own body.",
+      "category": "body",
+      "position": 86,
+      "comment_id": "FDA-2015-D-3719-0067"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "I don&#39;t think it&#39;s right that my own stem cells that came from my body can be",
+      "category": "body",
+      "position": 6,
+      "comment_id": "FDA-2015-D-3719-0126"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "it&#39;s right that my own stem cells that came from my body can be classified as a drug based on a",
+      "category": "body",
+      "position": 13,
+      "comment_id": "FDA-2015-D-3719-0126"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "is still the same product it should not matter if my stem cells are re-used the same day or several years",
+      "category": "body",
+      "position": 37,
+      "comment_id": "FDA-2015-D-3719-0126"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "tissue available for transplantation within the U.S. As part of our overall discussion with the Food and Drug Administration (FDA or",
+      "category": "other",
+      "position": 281,
+      "comment_id": "FDA-2015-D-3719-0097"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "product meet the Minimal Manipulation criteria under 21 CFR 1271Does my product meet the definition of minimalmanipulation (21 CFR 1271.3(f))? Does",
+      "category": "other",
+      "position": 9634,
+      "comment_id": "FDA-2015-D-3719-0097"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "product meet the definition of minimalmanipulation (21 CFR 1271.3(f))? Does my product perform a structural function? Is my product a nonstructuraltissue?No",
+      "category": "other",
+      "position": 9645,
+      "comment_id": "FDA-2015-D-3719-0097"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "CFR 1271.3(f))? Does my product perform a structural function? Is my product a nonstructuraltissue?No Does the processing of theproduct alter the",
+      "category": "body",
+      "position": 9652,
+      "comment_id": "FDA-2015-D-3719-0097"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "is minimally manipulated No No Page 1 Page 24 Does my product meet the definition of homologous use(21 CFR 12.71 3(c))?",
+      "category": "other",
+      "position": 9706,
+      "comment_id": "FDA-2015-D-3719-0097"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "criteria under 21 CFR 1271 Page 2 Page 25 Does my productmeet the definition ofautologous use (21CFR 1271.3(a))? Is the product",
+      "category": "other",
+      "position": 9863,
+      "comment_id": "FDA-2015-D-3719-0097"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "criteria under 21 CFR 1271 Page 3 Page 26 Is my product regulated solely as a 361 HCT/P under 21 CFR",
+      "category": "other",
+      "position": 9962,
+      "comment_id": "FDA-2015-D-3719-0097"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "following the stem cell treatment field for a long time, my view is that the 4 draft guidances are positive steps",
+      "category": "other",
+      "position": 79,
+      "comment_id": "FDA-2015-D-3719-0031"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "i TOTALLY AGREE THAT OUR CELLS ARE NOT DRUGS.THE GOVERNMENT HAS NO BUSINESS IN TELLING",
+      "category": "body",
+      "position": 4,
+      "comment_id": "FDA-2015-D-3719-0046"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "NO BUSINESS IN TELLING US WHAT WE CAN DO WITH OUR OWN CELLS.IS DIALYSIS A DRUG .BLOOD OUT BLOOD IN.ITS ALL",
+      "category": "body",
+      "position": 21,
+      "comment_id": "FDA-2015-D-3719-0046"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "back procedures. I don&#39;t understand how something that comes from my body that I agree to b harvested can be regulated.",
+      "category": "body",
+      "position": 37,
+      "comment_id": "FDA-2015-D-3719-0060"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "harvested can be regulated. The Fda is just another way our government gets into our pocked and they are just upset",
+      "category": "other",
+      "position": 54,
+      "comment_id": "FDA-2015-D-3719-0060"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "The Fda is just another way our government gets into our pocked and they are just upset because they want there",
+      "category": "other",
+      "position": 58,
+      "comment_id": "FDA-2015-D-3719-0060"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "government would then be feeding me to and own all my possessions because I would not be working the shots have",
+      "category": "other",
+      "position": 87,
+      "comment_id": "FDA-2015-D-3719-0060"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "would not be working the shots have helped me improve my lifestyle. Just leave people alone it&#39;s supposed to b a",
+      "category": "health",
+      "position": 101,
+      "comment_id": "FDA-2015-D-3719-0060"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "people alone it&#39;s supposed to b a free country it&#39;s my body not the governments (hitler is dead).",
+      "category": "body",
+      "position": 115,
+      "comment_id": "FDA-2015-D-3719-0060"
+    },
+    {
+      "possessive": "my",
+      "type": "first_person_singular",
+      "context": "My body is not a prescription drug.<br/>My stem cells are not",
+      "category": "body",
+      "position": 0,
+      "comment_id": "FDA-2015-D-3719-0075"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "We should be allowed to decide what is done to our bodies and with our bodily fluids and tissues. We should",
+      "category": "other",
+      "position": 18,
+      "comment_id": "FDA-2015-D-3719-0052"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "to decide what is done to our bodies and with our bodily fluids and tissues. We should also be able to",
+      "category": "other",
+      "position": 22,
+      "comment_id": "FDA-2015-D-3719-0052"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "should also be able to choose what we put in our bodies (our food should be labeled if it is GMO).",
+      "category": "other",
+      "position": 38,
+      "comment_id": "FDA-2015-D-3719-0052"
+    },
+    {
+      "possessive": "our",
+      "type": "first_person_plural",
+      "context": "be able to choose what we put in our bodies (our food should be labeled if it is GMO). We should",
+      "category": "other",
+      "position": 40,
+      "comment_id": "FDA-2015-D-3719-0052"
+    }
+  ],
+  "avg_per_document": 5.22
+}

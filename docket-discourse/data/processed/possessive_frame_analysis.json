@@ -1,0 +1,435 @@
+{
+  "body_self": {
+    "count": 75,
+    "examples": [
+      {
+        "possessive": "my",
+        "context": "Dear FDA and all others who are in charge of my health, After 22 years of seeing the same Neurologist who",
+        "indicator": "my health",
+        "category": "health",
+        "comment_id": "FDA-2015-D-3719-0005"
+      },
+      {
+        "possessive": "my",
+        "context": "go on and on. If I want to to use my own cells or bone marrow or whatever to help myself",
+        "indicator": "my own",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0005"
+      },
+      {
+        "possessive": "myself",
+        "context": "my own cells or bone marrow or whatever to help myself why won't you let me? Why would you want to",
+        "indicator": "my own",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0005"
+      },
+      {
+        "possessive": "my",
+        "context": "am as I am still trying to work. I want my life, I want it back please, please help me try",
+        "indicator": "my life",
+        "category": "health",
+        "comment_id": "FDA-2015-D-3719-0005"
+      },
+      {
+        "possessive": "my",
+        "context": "me try not to get worse. MS as taken over my body, don't you as well. • / / - ;)",
+        "indicator": "my body",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0005"
+      },
+      {
+        "possessive": "myself",
+        "context": "See attached file(s) [MANUAL ATTACHMENT TEXT] To introduce myself, Joan G. Woodward, age 58, consulting engineer with Primary Progressive",
+        "indicator": "myself",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "of immunologic tolerance to the genetically foreign pregnancy tissues.” Apparently, my body was not recognizing the pregnancies as such and my",
+        "indicator": "my body",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "my body was not recognizing the pregnancies as such and my immune system was literally killing the embryos. Similar to immunizing",
+        "indicator": "my body",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "a procedure in Winter Park, Florida the hospital stock piled my blood in case an infusion was necessary. The hospital did",
+        "indicator": "my blood",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "elected for me to receive mesenchymal stem cells harvested from my own adipose tissue. Literally, my fat may save me! After",
+        "indicator": "my own",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "mesenchymal stem cells harvested from my own adipose tissue. Literally, my fat may save me! After carefully researching several clinics, protocols",
+        "indicator": "my own",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "researching several clinics, protocols and Doctors, I chose Stemgenex as my provider. My cells, my blood, and my decision. How could",
+        "indicator": "my cells",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "clinics, protocols and Doctors, I chose Stemgenex as my provider. My cells, my blood, and my decision. How could this possibly",
+        "indicator": "my cells",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "and Doctors, I chose Stemgenex as my provider. My cells, my blood, and my decision. How could this possibly be considered",
+        "indicator": "my cells",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "chose Stemgenex as my provider. My cells, my blood, and my decision. How could this possibly be considered a New Investigational",
+        "indicator": "my cells",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "or more of research, looking for other options to extend my life with a better quality, I decided to undergo treatment",
+        "indicator": "my life",
+        "category": "health",
+        "comment_id": "FDA-2015-D-3719-0009"
+      },
+      {
+        "possessive": "my",
+        "context": "other agencies put strict regulations on the right to use my own cells as a method of treatment that they do",
+        "indicator": "my own",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0009"
+      },
+      {
+        "possessive": "myself",
+        "context": "to promote an increase in medical tourism. I considered it myself prior to locating the fine people at StemGenex. <br/><br/>PLEASE ....",
+        "indicator": "myself",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0009"
+      },
+      {
+        "possessive": "my",
+        "context": "your consideration in bringing these and keeping these treatments, using my own cells, to the forefront and stop putting absurd road",
+        "indicator": "my own",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0009"
+      },
+      {
+        "possessive": "my",
+        "context": "(my 4th one) use and increased oral and injectable steroids my health detiorated and my labs were incresaing in value (not",
+        "indicator": "my health",
+        "category": "health",
+        "comment_id": "FDA-2015-D-3719-0011"
+      }
+    ]
+  },
+  "treatment_therapy": {
+    "count": 84,
+    "examples": [
+      {
+        "possessive": "our",
+        "context": "immune system was literally killing the embryos. Similar to immunizing our children against known diseases, the LIT therapy consisted of two",
+        "indicator": "therapy",
+        "category": "family",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "thanks to the efforts of science and the medical community. My procedures did not involve drugs and both my husband and",
+        "indicator": "procedure",
+        "category": "treatment",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "medical community. My procedures did not involve drugs and both my husband and I were extensively screened for all diseases prior",
+        "indicator": "procedure",
+        "category": "family",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "FDA brought all clinics offering this treatment to a halt: My father and I share A‐ blood. During a procedure in",
+        "indicator": "treatment",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "a procedure in Winter Park, Florida the hospital stock piled my blood in case an infusion was necessary. The hospital did",
+        "indicator": "procedure",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "and have exhausted nearly all avenues. Multiple MRI’s have shown my disease to be progressing. The clinical trial drug is a",
+        "indicator": "clinical",
+        "category": "health",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "researching several clinics, protocols and Doctors, I chose Stemgenex as my provider. My cells, my blood, and my decision. How could",
+        "indicator": "doctor",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "clinics, protocols and Doctors, I chose Stemgenex as my provider. My cells, my blood, and my decision. How could this possibly",
+        "indicator": "doctor",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "and Doctors, I chose Stemgenex as my provider. My cells, my blood, and my decision. How could this possibly be considered",
+        "indicator": "doctor",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0007"
+      },
+      {
+        "possessive": "my",
+        "context": "or more of research, looking for other options to extend my life with a better quality, I decided to undergo treatment",
+        "indicator": "treatment",
+        "category": "health",
+        "comment_id": "FDA-2015-D-3719-0009"
+      },
+      {
+        "possessive": "my",
+        "context": "know that an eventual cure will involve stem cells. From my research and my personal experience with the treatments, I have",
+        "indicator": "treatment",
+        "category": "research",
+        "comment_id": "FDA-2015-D-3719-0009"
+      },
+      {
+        "possessive": "my",
+        "context": "eventual cure will involve stem cells. From my research and my personal experience with the treatments, I have undergone three of",
+        "indicator": "treatment",
+        "category": "family",
+        "comment_id": "FDA-2015-D-3719-0009"
+      },
+      {
+        "possessive": "my",
+        "context": "suffered in 2011. One cannot deny the improvements, not even my following physicians. <br/><br/>The FDA approved a lot of drugs last",
+        "indicator": "physician",
+        "category": "treatment",
+        "comment_id": "FDA-2015-D-3719-0009"
+      },
+      {
+        "possessive": "my",
+        "context": "other agencies put strict regulations on the right to use my own cells as a method of treatment that they do",
+        "indicator": "treatment",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0009"
+      },
+      {
+        "possessive": "my",
+        "context": "your consideration in bringing these and keeping these treatments, using my own cells, to the forefront and stop putting absurd road",
+        "indicator": "treatment",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0009"
+      },
+      {
+        "possessive": "my",
+        "context": "California 2-1/2 years ago and had stem cell therapy on my left knee which had arthritis and a torn meniscus. I",
+        "indicator": "therapy",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0008"
+      },
+      {
+        "possessive": "my",
+        "context": "I had the stem cell therapy I found improvement in my energy level, better bladder control and felt stronger. But, with",
+        "indicator": "therapy",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0010"
+      },
+      {
+        "possessive": "my",
+        "context": "cell transplant which includes high doses of chemotherapy. Basically destroying my immune system and giving me a new immune system. Without",
+        "indicator": "therapy",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0010"
+      },
+      {
+        "possessive": "my",
+        "context": "no reason people should have stem cell therapy. This is my case and everyone is different. Stem cell therapy is in",
+        "indicator": "therapy",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0010"
+      },
+      {
+        "possessive": "my",
+        "context": "case and everyone is different. Stem cell therapy is in my openion a shot term help. HSCT will halt MS in",
+        "indicator": "therapy",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0010"
+      }
+    ]
+  },
+  "economic_access": {
+    "count": 18,
+    "examples": [
+      {
+        "possessive": "my",
+        "context": "it worth the out of pocket expenses of over $15,000.00 my answer is no. I continue to get worse with the",
+        "indicator": "out of pocket",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0010"
+      },
+      {
+        "possessive": "myself",
+        "context": "first line option is key to healing individuals such as myself and for the future of medicine. The cost of one",
+        "indicator": "cost",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0011"
+      },
+      {
+        "possessive": "my",
+        "context": "was about the same as 3 months of therapy that my insurance company was paying for my biologics and other medicines.",
+        "indicator": "insurance",
+        "category": "organization",
+        "comment_id": "FDA-2015-D-3719-0011"
+      },
+      {
+        "possessive": "my",
+        "context": "months of therapy that my insurance company was paying for my biologics and other medicines. Literally had I been able to",
+        "indicator": "insurance",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0011"
+      },
+      {
+        "possessive": "my",
+        "context": "been able to try this therapy first instead of last my insurance and the system would have saved thousands of dollars",
+        "indicator": "insurance",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0011"
+      },
+      {
+        "possessive": "my",
+        "context": "would have been a greater cost to the system and my life would have Zero quality. I wish you could hear",
+        "indicator": "cost",
+        "category": "health",
+        "comment_id": "FDA-2015-D-3719-0011"
+      },
+      {
+        "possessive": "my",
+        "context": "down. While the treatment was not inexpensive it was within my reach. I think the government’s role in stem cell treatment",
+        "indicator": "expensive",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0012"
+      },
+      {
+        "possessive": "my",
+        "context": "Genex and called to learn more about their procedures for my disease. The cost of the treatment was $15,000. Money I",
+        "indicator": "cost",
+        "category": "health",
+        "comment_id": "FDA-2015-D-3719-0013"
+      },
+      {
+        "possessive": "my",
+        "context": "is the best possible treatment we have!! It has saved my insurance company tens of thousands in expensive medications. But most",
+        "indicator": "expensive",
+        "category": "organization",
+        "comment_id": "FDA-2015-D-3719-0021"
+      },
+      {
+        "possessive": "my",
+        "context": "expensive medications. But most of all it has given me my life back! I am a mother and a wife again!",
+        "indicator": "expensive",
+        "category": "health",
+        "comment_id": "FDA-2015-D-3719-0021"
+      },
+      {
+        "possessive": "myself",
+        "context": "access to this therapy, especially for no option patients like myself. <br/><br/>Now that Sen. Mark Kirk has brought the REGROW Act",
+        "indicator": "access",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0023"
+      },
+      {
+        "possessive": "my",
+        "context": "and have experienced my own positive results based on trial. My stem cells are my own, if I could access them",
+        "indicator": "access",
+        "category": "body",
+        "comment_id": "FDA-2015-D-3719-0019"
+      },
+      {
+        "possessive": "my",
+        "context": "own positive results based on trial. My stem cells are my own, if I could access them myself, purify them and",
+        "indicator": "access",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0019"
+      },
+      {
+        "possessive": "myself",
+        "context": "stem cells are my own, if I could access them myself, purify them and activate them I would. BUT because I",
+        "indicator": "access",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0019"
+      },
+      {
+        "possessive": "my",
+        "context": "“Dear FDA and all others who are in charge of my health, I…am on drugs that cost over 60,000 a year.",
+        "indicator": "cost",
+        "category": "health",
+        "comment_id": "FDA-2015-D-3719-0025"
+      },
+      {
+        "possessive": "my",
+        "context": "pocket. I took on a second mortgage for the treatment. My insurance company would pay for bilateral knee replacements and rehab,",
+        "indicator": "insurance",
+        "category": "organization",
+        "comment_id": "FDA-2015-D-3719-0090"
+      },
+      {
+        "possessive": "my",
+        "context": "efficient but expensive. The doctors took a week to poke my torn muscle with injections of saline and platelets to get",
+        "indicator": "expensive",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0069"
+      },
+      {
+        "possessive": "my",
+        "context": "up-front fee is significantly less than traditional rotator cuff costs my friends experienced. Also, I am near 100% range of motion,",
+        "indicator": "cost",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0069"
+      }
+    ]
+  },
+  "product_drug": {
+    "count": 1,
+    "examples": [
+      {
+        "possessive": "my",
+        "context": "is minimally manipulated No No Page 1 Page 24 Does my product meet the definition of homologous use(21 CFR 12.71 3(c))?",
+        "indicator": "manipulated",
+        "category": "other",
+        "comment_id": "FDA-2015-D-3719-0097"
+      }
+    ]
+  }
+}

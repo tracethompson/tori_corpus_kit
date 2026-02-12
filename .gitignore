@@ -21,11 +21,9 @@ dist/
 build/
 
 # Data files (generated)
-data/processed/
 data/outputs/
 
 # Keep directory structure
-!data/processed/.gitkeep
 !data/outputs/.gitkeep
 
 # IDE

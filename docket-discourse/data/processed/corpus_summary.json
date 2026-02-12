@@ -1,0 +1,14 @@
+{
+  "total_comments": 50,
+  "total_words": 7768,
+  "avg_words_per_comment": 155.36,
+  "median_words": 81.5,
+  "comment_types": {
+    "technical_document": 14,
+    "personal_narrative": 36
+  },
+  "type_percentages": {
+    "technical_document": 28.0,
+    "personal_narrative": 72.0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "total_comments": 50,
+  "frame_counts": {
+    "treatment_therapy": 42,
+    "economic_access": 26,
+    "body_self": 18,
+    "product_drug": 5
+  },
+  "frame_percentages": {
+    "treatment_therapy": 84.0,
+    "economic_access": 52.0,
+    "body_self": 36.0,
+    "product_drug": 10.0
+  },
+  "by_comment_type": {
+    "technical_document": {
+      "body_self": 0,
+      "product_drug": 1,
+      "treatment_therapy": 12,
+      "economic_access": 5
+    },
+    "personal_narrative": {
+      "body_self": 18,
+      "product_drug": 4,
+      "treatment_therapy": 30,
+      "economic_access": 21
+    }
+  }
+}
