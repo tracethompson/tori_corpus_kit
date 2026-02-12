@@ -1,33 +1,36 @@
 {
   "personal_narratives": {
-    "total": 256,
-    "avg_per_doc": 7.111111111111111,
+    "total": 287,
+    "avg_per_doc": 3.8783783783783785,
     "distribution": {
-      "my": 221,
+      "my": 237,
       "myself": 8,
-      "ourselves": 5,
-      "our": 22
+      "our": 40,
+      "ourselves": 1,
+      "mine": 1
     },
     "categories": {
-      "health": 27,
-      "other": 146,
-      "family": 12,
-      "body": 54,
-      "treatment": 10,
-      "research": 2,
-      "organization": 5
+      "family": 11,
+      "health": 18,
+      "research": 4,
+      "treatment": 13,
+      "other": 157,
+      "body": 75,
+      "organization": 9
     }
   },
   "technical_documents": {
-    "total": 5,
-    "avg_per_doc": 0.35714285714285715,
+    "total": 12,
+    "avg_per_doc": 0.46153846153846156,
     "distribution": {
-      "my": 5
+      "my": 9,
+      "our": 3
     },
     "categories": {
-      "other": 2,
-      "body": 1,
-      "family": 2
+      "other": 4,
+      "body": 4,
+      "family": 3,
+      "treatment": 1
     }
   }
 }
