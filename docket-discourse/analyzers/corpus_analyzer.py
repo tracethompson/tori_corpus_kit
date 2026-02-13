@@ -34,7 +34,6 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from utils import config
 from utils.data_loader import DataLoader
-from utils.comment_classifier import CommentClassifier
 
 logging.basicConfig(level=logging.INFO, format=config.LOG_FORMAT)
 logger = logging.getLogger(__name__)
@@ -46,7 +45,6 @@ class CorpusAnalyzer:
     def __init__(self):
         """Initialize analyzer with NLP models."""
         self.data_loader = DataLoader()
-        self.classifier = CommentClassifier()
 
         # Load spaCy model
         self.nlp = None
@@ -189,50 +187,13 @@ class CorpusAnalyzer:
         """Simple n-gram generation without NLTK."""
         return [tuple(tokens[i:i+n]) for i in range(len(tokens) - n + 1)]
 
-    def analyze_possessives(
-        self,
-        texts: List[str],
-        comment_ids: Optional[List[str]] = None,
-    ) -> Dict:
-        """
-        Deep analysis of possessive language patterns.
-
-        Args:
-            texts: List of text strings
-            comment_ids: Optional comment IDs for reference
-
-        Returns:
-            Analysis results dict
-        """
-        all_contexts = []
-        possessive_counts = Counter()
-        category_counts = Counter()
-
-        for i, text in enumerate(texts):
-            contexts = self.classifier.extract_possessive_contexts(text)
-            comment_id = comment_ids[i] if comment_ids else f"comment_{i}"
-
-            for ctx in contexts:
-                ctx["comment_id"] = comment_id
-                all_contexts.append(ctx)
-                possessive_counts[ctx["possessive"]] += 1
-                category_counts[ctx["category"]] += 1
-
-        return {
-            "total_possessives": len(all_contexts),
-            "possessive_distribution": dict(possessive_counts),
-            "category_distribution": dict(category_counts),
-            "contexts": all_contexts,
-            "avg_per_document": len(all_contexts) / len(texts) if texts else 0,
-        }
-
-    def run_three_track_analysis(
+    def run_analysis(
         self,
         comments: Optional[List[Dict]] = None,
         output_dir: Optional[Path] = None,
     ) -> Dict[str, Path]:
         """
-        Run parallel analyses on All, Personal, and Technical comment subsets.
+        Run word frequency and n-gram analysis on the full corpus.
 
         Args:
             comments: List of comment dicts (or load from file)
@@ -249,102 +210,47 @@ class CorpusAnalyzer:
 
         config.ensure_directories()
 
-        # Separate by type
-        all_texts = [c.get("full_text", c.get("comment_text", "")) for c in comments]
-        all_ids = [c.get("id", "") for c in comments]
-
-        personal = [c for c in comments if c.get("classification", {}).get("type") == "personal_narrative"]
-        personal_texts = [c.get("full_text", c.get("comment_text", "")) for c in personal]
-        personal_ids = [c.get("id", "") for c in personal]
-
-        technical = [c for c in comments if c.get("classification", {}).get("type") == "technical_document"]
-        technical_texts = [c.get("full_text", c.get("comment_text", "")) for c in technical]
-        technical_ids = [c.get("id", "") for c in technical]
-
+        texts = [c.get("full_text", c.get("comment_text", "")) for c in comments]
         output_files = {}
-        tracks = [
-            ("all", all_texts, all_ids),
-            ("personal", personal_texts, personal_ids),
-            ("technical", technical_texts, technical_ids),
-        ]
 
-        for track_name, texts, ids in tracks:
-            if not texts:
-                logger.warning(f"No texts for {track_name} track")
-                continue
+        if not texts:
+            logger.warning("No texts to analyze")
+            return output_files
 
-            logger.info(f"Analyzing {track_name} track: {len(texts)} documents")
+        logger.info(f"Analyzing {len(texts)} documents")
 
-            # Word frequencies (with and without stopwords)
-            for with_sw, suffix in [(True, "with_stopwords"), (False, "no_stopwords")]:
-                freq = self.calculate_word_frequencies(
-                    texts,
-                    remove_stopwords=not with_sw,
-                )
-                df = pd.DataFrame(freq, columns=["word", "count"])
-                path = output_dir / f"word_freq_{track_name}_{suffix}.csv"
-                df.to_csv(path, index=False)
-                output_files[f"word_freq_{track_name}_{suffix}"] = path
-
-            # Bigrams
-            for with_sw, suffix in [(True, "with_stopwords"), (False, "no_stopwords")]:
-                bigrams = self.calculate_ngrams(
-                    texts, n=2,
-                    remove_stopwords=not with_sw,
-                )
-                df = pd.DataFrame(bigrams, columns=["bigram", "count"])
-                path = output_dir / f"bigrams_{track_name}_{suffix}.csv"
-                df.to_csv(path, index=False)
-                output_files[f"bigrams_{track_name}_{suffix}"] = path
-
-            # Trigrams
-            for with_sw, suffix in [(True, "with_stopwords"), (False, "no_stopwords")]:
-                trigrams = self.calculate_ngrams(
-                    texts, n=3,
-                    remove_stopwords=not with_sw,
-                )
-                df = pd.DataFrame(trigrams, columns=["trigram", "count"])
-                path = output_dir / f"trigrams_{track_name}_{suffix}.csv"
-                df.to_csv(path, index=False)
-                output_files[f"trigrams_{track_name}_{suffix}"] = path
-
-        # Possessive analysis (all and comparison)
-        logger.info("Analyzing possessive language patterns...")
-
-        all_poss = self.analyze_possessives(all_texts, all_ids)
-        path = output_dir / "possessive_analysis.json"
-        self.data_loader.save_json(all_poss, path)
-        output_files["possessive_analysis"] = path
-
-        # Export possessive contexts as CSV
-        if all_poss["contexts"]:
-            df = pd.DataFrame(all_poss["contexts"])
-            path = output_dir / "possessive_contexts.csv"
+        # Word frequencies (with and without stopwords)
+        for with_sw, suffix in [(True, "with_stopwords"), (False, "no_stopwords")]:
+            freq = self.calculate_word_frequencies(
+                texts,
+                remove_stopwords=not with_sw,
+            )
+            df = pd.DataFrame(freq, columns=["word", "count"])
+            path = output_dir / f"word_freq_{suffix}.csv"
             df.to_csv(path, index=False)
-            output_files["possessive_contexts"] = path
+            output_files[f"word_freq_{suffix}"] = path
 
-        # Comparative possessive analysis
-        if personal_texts and technical_texts:
-            personal_poss = self.analyze_possessives(personal_texts, personal_ids)
-            technical_poss = self.analyze_possessives(technical_texts, technical_ids)
+        # Bigrams
+        for with_sw, suffix in [(True, "with_stopwords"), (False, "no_stopwords")]:
+            bigrams = self.calculate_ngrams(
+                texts, n=2,
+                remove_stopwords=not with_sw,
+            )
+            df = pd.DataFrame(bigrams, columns=["bigram", "count"])
+            path = output_dir / f"bigrams_{suffix}.csv"
+            df.to_csv(path, index=False)
+            output_files[f"bigrams_{suffix}"] = path
 
-            comparison = {
-                "personal_narratives": {
-                    "total": personal_poss["total_possessives"],
-                    "avg_per_doc": personal_poss["avg_per_document"],
-                    "distribution": personal_poss["possessive_distribution"],
-                    "categories": personal_poss["category_distribution"],
-                },
-                "technical_documents": {
-                    "total": technical_poss["total_possessives"],
-                    "avg_per_doc": technical_poss["avg_per_document"],
-                    "distribution": technical_poss["possessive_distribution"],
-                    "categories": technical_poss["category_distribution"],
-                },
-            }
-            path = output_dir / "possessive_comparison.json"
-            self.data_loader.save_json(comparison, path)
-            output_files["possessive_comparison"] = path
+        # Trigrams
+        for with_sw, suffix in [(True, "with_stopwords"), (False, "no_stopwords")]:
+            trigrams = self.calculate_ngrams(
+                texts, n=3,
+                remove_stopwords=not with_sw,
+            )
+            df = pd.DataFrame(trigrams, columns=["trigram", "count"])
+            path = output_dir / f"trigrams_{suffix}.csv"
+            df.to_csv(path, index=False)
+            output_files[f"trigrams_{suffix}"] = path
 
         logger.info(f"Analysis complete. Generated {len(output_files)} output files.")
         return output_files
@@ -370,20 +276,13 @@ class CorpusAnalyzer:
         if output_path is None:
             output_path = config.PROCESSED_DIR / "corpus_summary.json"
 
-        # Calculate statistics
         word_counts = [c.get("word_count", 0) for c in comments]
-        types = Counter(c.get("classification", {}).get("type", "unknown") for c in comments)
 
         summary = {
             "total_comments": len(comments),
             "total_words": sum(word_counts),
             "avg_words_per_comment": np.mean(word_counts) if word_counts else 0,
             "median_words": np.median(word_counts) if word_counts else 0,
-            "comment_types": dict(types),
-            "type_percentages": {
-                k: round(v / len(comments) * 100, 2)
-                for k, v in types.items()
-            } if comments else {},
         }
 
         self.data_loader.save_json(summary, output_path)
@@ -398,9 +297,6 @@ def main():
     parser.add_argument("--input", help="Input JSON file path")
     parser.add_argument("--output-dir", help="Output directory")
     parser.add_argument("--summary-only", action="store_true", help="Only generate summary")
-    parser.add_argument("--track", choices=["all", "personal", "technical"],
-                       help="Analyze single track only")
-
     args = parser.parse_args()
 
     analyzer = CorpusAnalyzer()
@@ -418,7 +314,7 @@ def main():
         summary = analyzer.generate_summary_report(comments)
         print(json.dumps(summary, indent=2))
     else:
-        output_files = analyzer.run_three_track_analysis(comments, output_dir)
+        output_files = analyzer.run_analysis(comments, output_dir)
         print(f"\nGenerated {len(output_files)} output files:")
         for name, path in output_files.items():
             print(f"  - {name}: {path}")

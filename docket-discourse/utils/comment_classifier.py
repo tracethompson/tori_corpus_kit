@@ -20,9 +20,22 @@ class CommentClassifier:
             technical_terms_path = config.DICTIONARIES_DIR / "technical_terms.json"
 
         self.technical_terms = self._load_technical_terms(technical_terms_path)
-        self.personal_indicators = [p.lower() for p in config.PERSONAL_NARRATIVE_INDICATORS]
-        self.technical_indicators = [t.lower() for t in config.TECHNICAL_DOCUMENT_INDICATORS]
-        self.org_indicators = [o.lower() for o in config.ORGANIZATIONAL_INDICATORS]
+        self.personal_indicators = [
+            "my", "mine", "our", "ours", "myself", "ourselves",
+            "i am", "i was", "i have", "i had", "we are", "we have",
+            "my doctor", "my treatment", "my condition", "my disease",
+            "saved my life", "changed my life", "helped me",
+        ]
+        self.technical_indicators = [
+            "cfr", "phsa", "section", "regulation", "guidance",
+            "pursuant", "herein", "thereof", "whereas",
+            "compliance", "regulatory", "submission",
+        ]
+        self.org_indicators = [
+            "on behalf of", "our organization", "our members",
+            "we submit", "our association", "our company",
+            "the undersigned", "respectfully submit",
+        ]
 
     def _load_technical_terms(self, path: Path) -> List[str]:
         """Load technical terms from dictionary file."""
@@ -124,12 +137,12 @@ class CommentClassifier:
             score += 1.0
 
         # Moderate length (too long suggests technical/organizational)
-        if word_count < config.MAX_WORDS_PERSONAL:
+        if word_count < 1000:
             score += 0.5
 
         # Low technical density
         density = self.calculate_technical_density(text, word_count)
-        if density < config.TECHNICAL_DENSITY_THRESHOLD:
+        if density < 2.0:
             score += 1.0
 
         return score
@@ -144,13 +157,13 @@ class CommentClassifier:
 
         # High technical density
         density = self.calculate_technical_density(text, word_count)
-        if density >= config.TECHNICAL_DENSITY_THRESHOLD:
+        if density >= 2.0:
             score += 2.0
         elif density >= 1.0:
             score += 1.0
 
         # Longer documents tend to be technical
-        if word_count >= config.MIN_WORDS_TECHNICAL:
+        if word_count >= 500:
             score += 1.5
         elif word_count >= 250:
             score += 0.5

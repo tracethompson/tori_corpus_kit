@@ -60,36 +60,6 @@ FIGURES_DIR = OUTPUTS_DIR / "figures"
 QUOTES_DIR = OUTPUTS_DIR / "quotes"
 
 # =============================================================================
-# Classification Thresholds
-# =============================================================================
-# Comment type classification
-PERSONAL_NARRATIVE_INDICATORS = [
-    "my", "mine", "our", "ours", "myself", "ourselves",
-    "i am", "i was", "i have", "i had", "we are", "we have",
-    "my doctor", "my treatment", "my condition", "my disease",
-    "saved my life", "changed my life", "helped me",
-]
-
-TECHNICAL_DOCUMENT_INDICATORS = [
-    "cfr", "phsa", "section", "regulation", "guidance",
-    "pursuant", "herein", "thereof", "whereas",
-    "compliance", "regulatory", "submission",
-]
-
-ORGANIZATIONAL_INDICATORS = [
-    "on behalf of", "our organization", "our members",
-    "we submit", "our association", "our company",
-    "the undersigned", "respectfully submit",
-]
-
-# Word count thresholds for classification
-MIN_WORDS_TECHNICAL = 500  # Technical docs tend to be longer
-MAX_WORDS_PERSONAL = 1000  # Very long personal narratives are rare
-
-# Technical density threshold (technical terms per 100 words)
-TECHNICAL_DENSITY_THRESHOLD = 2.0
-
-# =============================================================================
 # MinHash/LSH Configuration (Duplicate Detection)
 # =============================================================================
 MINHASH_NUM_PERM = 128  # Number of permutations
@@ -133,29 +103,6 @@ FRAME_CATEGORIES = {
         ],
     },
 }
-
-# =============================================================================
-# Stakeholder Classification
-# =============================================================================
-STAKEHOLDER_CATEGORIES = [
-    "patient",
-    "patient_advocate",
-    "healthcare_provider",
-    "clinic_operator",
-    "industry",
-    "researcher",
-    "legal_professional",
-    "general_public",
-    "unknown",
-]
-
-# Confidence levels
-CONFIDENCE_HIGH = "high"
-CONFIDENCE_MEDIUM = "medium"
-CONFIDENCE_LOW = "low"
-
-# Only output classifications above this threshold
-MIN_CONFIDENCE_OUTPUT = CONFIDENCE_HIGH
 
 # =============================================================================
 # Export Configuration

@@ -299,7 +299,6 @@ class ExportFormatter:
             Methodology text
         """
         total = stats.get("total_comments", 0)
-        types = stats.get("comment_types", {})
         unique_ratio = stats.get("uniqueness_ratio", 0)
 
         methodology = f"""
@@ -315,15 +314,10 @@ Comments were collected via the regulations.gov API between the docket opening d
 and comment period close. Each comment was processed to extract full text, including
 PDF attachments where applicable.
 
-### Classification
+### Corpus Analysis
 
-Comments were automatically classified into three categories:
-- Personal Narratives ({types.get('personal_narrative', 0):,} comments):
-  First-person accounts emphasizing individual experience
-- Technical Documents ({types.get('technical_document', 0):,} comments):
-  Regulatory analysis with citations to CFR and PHSA
-- Organizational Submissions ({types.get('organizational', 0):,} comments):
-  Formal comments submitted on behalf of organizations
+Word frequencies, bigrams, and trigrams were generated using spaCy for tokenization
+and lemmatization, with both stopword-filtered and unfiltered variants.
 
 ### Duplicate Detection
 
@@ -332,18 +326,10 @@ similarity threshold of {config.SIMILARITY_THRESHOLD}. This analysis found that
 {unique_ratio:.1f}% of comments represented unique arguments, with the remainder
 identified as variations of form letters.
 
-### Analysis Tools
-
-The analysis employed:
-- spaCy for natural language processing (tokenization, lemmatization, NLP tagging)
-- Custom frame detection for rhetorical analysis
-- Multi-signal stakeholder classification
-
 ### Limitations
 
 PDF extraction may have introduced errors in some attached documents;
-these were flagged for manual review. Automated classification has inherent
-limitations and a sample was manually validated.
+these were flagged for manual review.
 """
 
         if output_path:
@@ -431,33 +417,6 @@ limitations and a sample was manually validated.
         path = output_dir / "methodology.md"
         self.generate_methodology_section(stats, path)
         output_files["methodology"] = path
-
-        # Tables
-        tables_dir = output_dir / "tables"
-
-        # Comment type summary table
-        type_data = [
-            {"Type": k, "Count": v, "Percentage": f"{v/len(comments)*100:.1f}%"}
-            for k, v in stats.get("comment_types", {}).items()
-        ]
-        if type_data and DOCX_AVAILABLE:
-            path = tables_dir / "comment_types.docx"
-            self.create_table_docx(
-                type_data,
-                ["Type", "Count", "Percentage"],
-                "Table 1: Comment Type Distribution",
-                path,
-            )
-            output_files["table_types_docx"] = path
-
-            path = tables_dir / "comment_types.tex"
-            self.create_table_latex(
-                type_data,
-                ["Type", "Count", "Percentage"],
-                "Comment Type Distribution",
-                path,
-            )
-            output_files["table_types_latex"] = path
 
         # Extract thematic quotes
         themes = {

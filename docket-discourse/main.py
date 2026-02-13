@@ -3,7 +3,7 @@
 docket-discourse v2.0
 
 FDA Public Comment Analysis Suite for docket FDA-2015-D-3719.
-A 9-tool analysis pipeline for 6,950 public comments on HCTP regulations.
+Analysis pipeline for public comments on HCTP regulations.
 
 Usage:
     python main.py --phase 1      # Run data collection phase
@@ -105,31 +105,11 @@ def run_phase_2():
     try:
         from analyzers.corpus_analyzer import CorpusAnalyzer
         analyzer = CorpusAnalyzer()
-        analyzer.run_three_track_analysis(comments)
+        analyzer.run_analysis(comments)
         analyzer.generate_summary_report(comments)
         logger.info("Corpus analysis complete")
     except Exception as e:
         logger.error(f"Corpus analyzer error: {e}")
-
-    # Tool 5: Frame Detector
-    logger.info("\n[Tool 5] Running Frame Detector...")
-    try:
-        from analyzers.frame_detector import FrameDetector
-        detector = FrameDetector()
-        detector.analyze_corpus(comments)
-        logger.info("Frame detection complete")
-    except Exception as e:
-        logger.error(f"Frame detector error: {e}")
-
-    # Tool 6: Stakeholder Classifier
-    logger.info("\n[Tool 6] Running Stakeholder Classifier...")
-    try:
-        from analyzers.stakeholder_classifier import StakeholderClassifier
-        classifier = StakeholderClassifier()
-        classifier.classify_corpus(comments)
-        logger.info("Stakeholder classification complete")
-    except Exception as e:
-        logger.error(f"Stakeholder classifier error: {e}")
 
     # Tool 7: Temporal Mapper
     logger.info("\n[Tool 7] Running Temporal Mapper...")
@@ -193,7 +173,6 @@ def run_tool(tool_name: str, **kwargs):
         "attachments": run_attachment_fetcher,
         "corpus": run_corpus_analyzer,
         "frames": run_frame_detector,
-        "stakeholder": run_stakeholder_classifier,
         "temporal": run_temporal_mapper,
         "citations": run_citation_extractor,
         "charts": run_chart_generator,
@@ -247,7 +226,7 @@ def run_corpus_analyzer(**kwargs):
     loader = DataLoader()
     comments = loader.load_comments_json()
     analyzer = CorpusAnalyzer()
-    analyzer.run_three_track_analysis(comments)
+    analyzer.run_analysis(comments)
 
 
 def run_frame_detector(**kwargs):
@@ -258,16 +237,6 @@ def run_frame_detector(**kwargs):
     comments = loader.load_comments_json()
     detector = FrameDetector()
     detector.analyze_corpus(comments)
-
-
-def run_stakeholder_classifier(**kwargs):
-    """Run stakeholder classifier."""
-    from analyzers.stakeholder_classifier import StakeholderClassifier
-    from utils.data_loader import DataLoader
-    loader = DataLoader()
-    comments = loader.load_comments_json()
-    classifier = StakeholderClassifier()
-    classifier.classify_corpus(comments)
 
 
 def run_temporal_mapper(**kwargs):
@@ -353,16 +322,14 @@ Examples:
     python main.py --phase 3              # Run export
     python main.py --tool scraper         # Run specific tool
     python main.py --tool scraper --limit 100  # Test with 100 comments
-    python main.py --filter personal      # Filter to personal narratives
 
 Tools:
     scraper     - Regulations.gov API scraper
     search      - Related docket search
     baseline    - Baseline statistics calculator
     attachments - Attempt to fetch missing attachments from downloads site
-    corpus      - Corpus NLP analyzer
+    corpus      - Corpus NLP analyzer (word freq, bigrams, trigrams)
     frames      - Rhetorical frame detector
-    stakeholder - Stakeholder classifier
     temporal    - Temporal/duplicate analysis
     citations   - Citation extractor
     charts      - Chart generator
@@ -380,7 +347,7 @@ Tools:
         "--tool",
         choices=[
             "scraper", "search", "baseline", "attachments",
-            "corpus", "frames", "stakeholder", "temporal",
+            "corpus", "frames", "temporal",
             "citations", "charts", "export",
         ],
         help="Run specific tool",
@@ -394,11 +361,6 @@ Tools:
         "--limit",
         type=int,
         help="Limit number of comments (for testing)",
-    )
-    parser.add_argument(
-        "--filter",
-        choices=["personal", "technical", "organizational"],
-        help="Filter to specific comment type",
     )
     parser.add_argument(
         "--validate-api",

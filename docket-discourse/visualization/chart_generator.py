@@ -58,108 +58,6 @@ class ChartGenerator:
         logger.info(f"Saved figure: {name}")
         return png_path, pdf_path
 
-    def comment_type_distribution(
-        self,
-        comments: List[Dict],
-        name: str = "comment_type_distribution",
-    ) -> Tuple[Path, Path]:
-        """
-        Create pie/bar chart of comment type distribution.
-
-        Args:
-            comments: List of comment dicts
-            name: Output filename
-
-        Returns:
-            Tuple of (png_path, pdf_path)
-        """
-        # Count types
-        type_counts = {}
-        for comment in comments:
-            ctype = comment.get("classification", {}).get("type", "unknown")
-            type_counts[ctype] = type_counts.get(ctype, 0) + 1
-
-        labels = list(type_counts.keys())
-        sizes = list(type_counts.values())
-
-        # Create figure
-        fig, axes = plt.subplots(1, 2, figsize=(12, 5))
-
-        # Pie chart
-        ax1 = axes[0]
-        colors = sns.color_palette("husl", len(labels))
-        wedges, texts, autotexts = ax1.pie(
-            sizes, labels=labels, autopct="%1.1f%%",
-            colors=colors, startangle=90
-        )
-        ax1.set_title("Comment Type Distribution")
-
-        # Bar chart
-        ax2 = axes[1]
-        bars = ax2.bar(labels, sizes, color=colors)
-        ax2.set_xlabel("Comment Type")
-        ax2.set_ylabel("Number of Comments")
-        ax2.set_title("Comment Counts by Type")
-
-        # Add value labels on bars
-        for bar, count in zip(bars, sizes):
-            ax2.annotate(
-                f"{count:,}",
-                xy=(bar.get_x() + bar.get_width() / 2, bar.get_height()),
-                ha="center", va="bottom", fontsize=10
-            )
-
-        plt.tight_layout()
-        return self._save_figure(fig, name)
-
-    def stakeholder_distribution(
-        self,
-        comments: List[Dict],
-        name: str = "stakeholder_distribution",
-    ) -> Tuple[Path, Path]:
-        """
-        Create horizontal bar chart of stakeholder types.
-
-        Args:
-            comments: List of comment dicts
-            name: Output filename
-
-        Returns:
-            Tuple of (png_path, pdf_path)
-        """
-        # Count stakeholders
-        stakeholder_counts = {}
-        for comment in comments:
-            stakeholder = comment.get("stakeholder", {}).get("category", "unknown")
-            stakeholder_counts[stakeholder] = stakeholder_counts.get(stakeholder, 0) + 1
-
-        # Sort by count
-        sorted_items = sorted(stakeholder_counts.items(), key=lambda x: x[1], reverse=True)
-        labels = [item[0] for item in sorted_items]
-        counts = [item[1] for item in sorted_items]
-
-        # Create figure
-        fig, ax = plt.subplots(figsize=(10, 6))
-
-        colors = sns.color_palette("husl", len(labels))
-        bars = ax.barh(labels, counts, color=colors)
-
-        ax.set_xlabel("Number of Comments")
-        ax.set_ylabel("Stakeholder Type")
-        ax.set_title("Comment Distribution by Stakeholder Type")
-
-        # Add value labels
-        for bar, count in zip(bars, counts):
-            ax.annotate(
-                f"{count:,}",
-                xy=(bar.get_width() + max(counts) * 0.01, bar.get_y() + bar.get_height() / 2),
-                va="center", fontsize=9
-            )
-
-        ax.invert_yaxis()
-        plt.tight_layout()
-        return self._save_figure(fig, name)
-
     def frame_distribution(
         self,
         frame_data: Dict,
@@ -202,71 +100,6 @@ class ChartGenerator:
                 xy=(bar.get_x() + bar.get_width() / 2, bar.get_height()),
                 ha="center", va="bottom", fontsize=10
             )
-
-        plt.tight_layout()
-        return self._save_figure(fig, name)
-
-    def possessive_comparison(
-        self,
-        comparison_data: Dict,
-        name: str = "possessive_comparison",
-    ) -> Tuple[Path, Path]:
-        """
-        Create comparison chart of possessive language usage.
-
-        Args:
-            comparison_data: Possessive comparison results
-            name: Output filename
-
-        Returns:
-            Tuple of (png_path, pdf_path)
-        """
-        personal = comparison_data.get("personal_narratives", {})
-        technical = comparison_data.get("technical_documents", {})
-
-        fig, axes = plt.subplots(1, 2, figsize=(12, 5))
-
-        # Average per document comparison
-        ax1 = axes[0]
-        categories = ["Personal\nNarratives", "Technical\nDocuments"]
-        avgs = [
-            personal.get("avg_per_doc", 0),
-            technical.get("avg_per_doc", 0),
-        ]
-        colors = ["#e74c3c", "#3498db"]
-
-        bars = ax1.bar(categories, avgs, color=colors)
-        ax1.set_ylabel("Average Possessives per Document")
-        ax1.set_title("Possessive Language Density by Comment Type")
-
-        for bar, avg in zip(bars, avgs):
-            ax1.annotate(
-                f"{avg:.1f}",
-                xy=(bar.get_x() + bar.get_width() / 2, bar.get_height()),
-                ha="center", va="bottom", fontsize=12
-            )
-
-        # Category breakdown
-        ax2 = axes[1]
-        personal_cats = personal.get("categories", {})
-        technical_cats = technical.get("categories", {})
-
-        all_cats = sorted(set(list(personal_cats.keys()) + list(technical_cats.keys())))
-
-        x = np.arange(len(all_cats))
-        width = 0.35
-
-        personal_vals = [personal_cats.get(c, 0) for c in all_cats]
-        technical_vals = [technical_cats.get(c, 0) for c in all_cats]
-
-        ax2.bar(x - width/2, personal_vals, width, label="Personal", color="#e74c3c")
-        ax2.bar(x + width/2, technical_vals, width, label="Technical", color="#3498db")
-
-        ax2.set_ylabel("Count")
-        ax2.set_title("Possessive Object Categories")
-        ax2.set_xticks(x)
-        ax2.set_xticklabels(all_cats, rotation=45, ha="right")
-        ax2.legend()
 
         plt.tight_layout()
         return self._save_figure(fig, name)
@@ -376,11 +209,6 @@ class ChartGenerator:
 
         output_files = {}
 
-        # Comment type distribution
-        if comments:
-            paths = self.comment_type_distribution(comments)
-            output_files["comment_type_distribution"] = paths
-
         # Load processed data files if available
         processed = config.PROCESSED_DIR
 
@@ -391,14 +219,6 @@ class ChartGenerator:
                 frame_data = json.load(f)
             paths = self.frame_distribution(frame_data)
             output_files["frame_distribution"] = paths
-
-        # Possessive comparison
-        poss_path = processed / "possessive_comparison.json"
-        if poss_path.exists():
-            with open(poss_path) as f:
-                poss_data = json.load(f)
-            paths = self.possessive_comparison(poss_data)
-            output_files["possessive_comparison"] = paths
 
         # Duplicate analysis
         dup_path = processed / "duplicate_analysis.json"
@@ -428,7 +248,7 @@ def main():
     parser.add_argument("--input", help="Input JSON file")
     parser.add_argument("--all", action="store_true", help="Generate all available charts")
     parser.add_argument("--chart", choices=[
-        "comment_type", "stakeholder", "frames", "possessive", "duplicates", "citations"
+        "frames", "duplicates", "citations"
     ], help="Generate specific chart")
 
     args = parser.parse_args()

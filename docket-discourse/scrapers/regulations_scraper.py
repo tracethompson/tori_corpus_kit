@@ -2,7 +2,7 @@
 Tool 1: Regulations.gov API Scraper
 
 Fetches public comments from FDA docket FDA-2015-D-3719 via the regulations.gov API.
-Handles pagination, attachments, PDF extraction, and real-time classification.
+Handles pagination, attachments, and PDF extraction.
 """
 import os
 import io
@@ -26,7 +26,6 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from utils import config
-from utils.comment_classifier import CommentClassifier
 from utils.data_loader import DataLoader
 
 logging.basicConfig(level=logging.INFO, format=config.LOG_FORMAT)
@@ -52,15 +51,11 @@ class RegulationsScraper:
 
         self.base_url = config.REGULATIONS_API_BASE
         self.rate_limit_delay = config.RATE_LIMIT_DELAY
-        self.classifier = CommentClassifier()
         self.data_loader = DataLoader()
 
         # Statistics
         self.stats = {
             "total_fetched": 0,
-            "personal_narratives": 0,
-            "technical_documents": 0,
-            "organizational": 0,
             "pdfs_processed": 0,
             "pdfs_flagged": 0,
             "errors": 0,
@@ -228,7 +223,7 @@ class RegulationsScraper:
 
     def process_comment(self, comment_data: Dict) -> Dict:
         """
-        Process a single comment: extract text, handle attachments, classify.
+        Process a single comment: extract text and handle attachments.
 
         Args:
             comment_data: Raw API response for comment
@@ -285,18 +280,8 @@ class RegulationsScraper:
         # Calculate word count
         word_count = len(full_text.split()) if full_text else 0
 
-        # Classify comment
-        classification = self.classifier.classify_comment_type(full_text, word_count)
-
         # Update stats
         self.stats["total_fetched"] += 1
-        comment_type = classification.get("type", "unknown")
-        if comment_type == "personal_narrative":
-            self.stats["personal_narratives"] += 1
-        elif comment_type == "technical_document":
-            self.stats["technical_documents"] += 1
-        elif comment_type == "organizational":
-            self.stats["organizational"] += 1
 
         return {
             "id": comment_id,
@@ -309,7 +294,6 @@ class RegulationsScraper:
             "word_count": word_count,
             "has_attachments": len(attachments) > 0,
             "attachments": attachments,
-            "classification": classification,
             "raw_attributes": attributes,
         }
 
@@ -411,16 +395,16 @@ class RegulationsScraper:
         self,
         comments: Optional[List[Dict]] = None,
         output_dir: Optional[Path] = None,
-    ) -> Dict[str, Path]:
+    ) -> Path:
         """
-        Export comments as searchable text files by type.
+        Export comments as a searchable text file.
 
         Args:
             comments: List of comments (or load from file)
             output_dir: Output directory
 
         Returns:
-            Dict of output file paths
+            Output file path
         """
         if comments is None:
             comments = self.data_loader.load_comments_json()
@@ -428,31 +412,10 @@ class RegulationsScraper:
         if output_dir is None:
             output_dir = config.RAW_DIR
 
-        output_files = {}
-
-        # All comments
         all_path = output_dir / "comments_searchable_ALL.txt"
         self.data_loader.save_searchable_text(comments, all_path, "full_text")
-        output_files["all"] = all_path
-
-        # By type
-        type_mapping = {
-            "personal_narratives": "personal_narrative",
-            "technical_documents": "technical_document",
-            "organizational": "organizational",
-        }
-
-        for filename_part, type_value in type_mapping.items():
-            filtered = [
-                c for c in comments
-                if c.get("classification", {}).get("type") == type_value
-            ]
-            path = output_dir / f"comments_searchable_{filename_part}.txt"
-            self.data_loader.save_searchable_text(filtered, path, "full_text")
-            output_files[filename_part] = path
-            logger.info(f"Exported {len(filtered)} {filename_part}")
-
-        return output_files
+        logger.info(f"Exported {len(comments)} comments to searchable text")
+        return all_path
 
     def export_csv(
         self,
@@ -460,7 +423,7 @@ class RegulationsScraper:
         output_path: Optional[Path] = None,
     ) -> Path:
         """
-        Export comments to CSV with classification columns.
+        Export comments to CSV.
 
         Args:
             comments: List of comments (or load from file)
@@ -475,21 +438,15 @@ class RegulationsScraper:
         if output_path is None:
             output_path = config.RAW_DIR / "comments.csv"
 
-        # Flatten for CSV
         csv_data = []
         for comment in comments:
-            classification = comment.get("classification", {})
             csv_data.append({
                 "id": comment.get("id", ""),
                 "posted_date": comment.get("posted_date", ""),
                 "submitter_name": comment.get("submitter_name", ""),
                 "word_count": comment.get("word_count", 0),
                 "has_attachments": comment.get("has_attachments", False),
-                "comment_type": classification.get("type", ""),
-                "type_confidence": classification.get("confidence", 0),
-                "technical_density": classification.get("signals", {}).get("technical_density", 0),
-                "possessive_count": classification.get("signals", {}).get("possessive_count", 0),
-                "comment_text": comment.get("comment_text", "")[:1000],  # Truncate for CSV
+                "comment_text": comment.get("comment_text", "")[:1000],
             })
 
         self.data_loader.save_csv(csv_data, output_path)

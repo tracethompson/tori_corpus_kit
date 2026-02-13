@@ -102,25 +102,6 @@ class DataLoader:
         for i in range(0, len(comments), batch_size):
             yield comments[i : i + batch_size]
 
-    def load_by_type(
-        self, comment_type: str, filepath: Optional[Path] = None
-    ) -> List[Dict]:
-        """
-        Load comments filtered by classification type.
-
-        Args:
-            comment_type: One of 'personal_narrative', 'technical_document', 'organizational'
-            filepath: Path to JSON file
-
-        Returns:
-            Filtered list of comments
-        """
-        comments = self.load_comments_json(filepath)
-        return [
-            c for c in comments
-            if c.get("classification", {}).get("type") == comment_type
-        ]
-
     def load_technical_terms(self) -> Dict:
         """Load technical terms dictionary."""
         filepath = config.DICTIONARIES_DIR / "technical_terms.json"
@@ -260,12 +241,6 @@ def load_comments(filepath: Optional[Path] = None) -> List[Dict]:
     """Load comments from default JSON file."""
     loader = DataLoader()
     return loader.load_comments_json(filepath)
-
-
-def load_comments_by_type(comment_type: str) -> List[Dict]:
-    """Load comments filtered by type."""
-    loader = DataLoader()
-    return loader.load_by_type(comment_type)
 
 
 def save_results(data: Union[List, Dict], filename: str, output_dir: Optional[Path] = None) -> bool:

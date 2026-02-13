@@ -23,14 +23,6 @@ def sample_comment():
         "word_count": 9,
         "has_attachments": False,
         "attachments": [],
-        "classification": {
-            "type": "personal_narrative",
-            "confidence": 0.8,
-            "signals": {
-                "possessive_count": 1,
-                "technical_density": 0.0,
-            },
-        },
     }
 
 
@@ -44,43 +36,6 @@ def sample_comments():
             "full_text": f"Sample comment text {i}",
             "word_count": 4,
             "posted_date": f"2016-01-{15+i:02d}",
-            "classification": {"type": "personal_narrative"},
         }
         for i in range(10)
     ]
-
-
-@pytest.fixture
-def personal_narrative_text():
-    """Sample personal narrative text."""
-    return """
-    I am writing to share my personal experience with stem cell therapy.
-    My condition was diagnosed three years ago, and my doctors told me
-    there was nothing conventional medicine could do. After my treatment,
-    my pain decreased significantly. My quality of life has improved.
-    I believe my cells, my body, should be my choice.
-    """
-
-
-@pytest.fixture
-def technical_document_text():
-    """Sample technical document text."""
-    return """
-    Pursuant to 21 CFR Part 1271.10, we submit these comments regarding
-    the draft guidance. Section 361 of the PHSA establishes the regulatory
-    framework for HCT/Ps. The minimal manipulation criteria should be
-    interpreted consistently with the statutory authority granted under
-    Section 351. We respectfully request clarification on homologous use.
-    """
-
-
-@pytest.fixture
-def organizational_text():
-    """Sample organizational submission text."""
-    return """
-    On behalf of the American Association of Regenerative Medicine, we
-    respectfully submit these comments. Our organization represents over
-    500 member clinics. Our members collectively serve thousands of patients.
-    The undersigned organizations urge the FDA to reconsider the proposed
-    guidance. We submit that the proposed framework is overly restrictive.
-    """
