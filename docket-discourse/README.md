@@ -1,23 +1,64 @@
-# docket-discourse v2.0
+# docket-discourse
 
-A Python analysis suite for analyzing ~6,950 FDA public comments from docket FDA-2015-D-3719 ("Human Cells, Tissues, and Cellular and Tissue-Based Products from Adipose Tissue: Regulatory Considerations").
+A Python toolkit for collecting and analyzing FDA public comments from docket FDA-2015-D-3719 ("Human Cells, Tissues, and Cellular and Tissue-Based Products from Adipose Tissue: Regulatory Considerations").
 
-## Features
+**Dataset:** 6,959 comments collected via the regulations.gov API, with 39 PDF attachments.
 
-- **API-based data collection** from regulations.gov
-- **Word frequency analysis** with lemmatization via spaCy
-- **Bigram and trigram extraction** (with and without stopwords)
-- **MinHash/LSH duplicate detection** for identifying form letters vs. unique arguments
-- **Temporal submission pattern analysis**
-- **Citation extraction** (CFR, PHSA, guidance documents)
-- **Publication-ready exports** (MLA 8 formatted quotes, 300dpi figures)
+## What This Tool Does
+
+1. **Scrapes comments** from the regulations.gov API (with rate limiting and checkpoint/resume)
+2. **Generates word frequencies** — the most common words across all comments
+3. **Generates bigrams and trigrams** — the most common two- and three-word phrases
+4. **Extracts regulatory citations** — references to CFR sections, PHSA, guidance documents
+5. **Detects duplicate/form letter comments** using MinHash/LSH similarity
+6. **Exports publication-ready outputs** — MLA 8 citations, 300dpi figures, methodology text
+
+## Finding the Data
+
+### Raw Comments
+
+All in `data/raw/`:
+
+| File | What it is |
+|---|---|
+| `comments_searchable_ALL.txt` | Every comment as readable text, separated by headers. Open this to search or browse comments. |
+| `comments.json` | All 6,959 comments with full metadata (submitter, date, ID, word count, attachment info). |
+| `comments.csv` | Same data as a spreadsheet. Open in Excel or Google Sheets. |
+| `manual_attachments/` | 39 PDF files from 27 comments that included attached documents. Organized by comment ID. |
+| `FDA-2015-D-3719_checkpoint.json` | Scraper checkpoint file (used for resume on interruption). |
+
+### Analysis Results
+
+All in `data/processed/`:
+
+| File | What it is |
+|---|---|
+| `word_freq_no_stopwords.csv` | Top words by frequency, with common words ("the", "is") filtered out. |
+| `word_freq_with_stopwords.csv` | Top words by frequency, keeping all words. |
+| `bigrams_no_stopwords.csv` | Top two-word pairs, common words filtered out. |
+| `bigrams_with_stopwords.csv` | Top two-word pairs, keeping all words. |
+| `trigrams_no_stopwords.csv` | Top three-word phrases, common words filtered out. |
+| `trigrams_with_stopwords.csv` | Top three-word phrases, keeping all words. |
+| `corpus_summary.json` | Summary stats (total comments, total words, avg length). |
+| `citations_all.csv` | Every regulatory citation found across all comments. |
+| `citations_guidance.csv` | Citations to FDA guidance documents specifically. |
+| `citations_technical_terms.csv` | Technical/regulatory term usage. |
+| `citation_summary.json` | Citation count summary. |
+
+### Publication Outputs
+
+All in `data/outputs/`:
+
+| File | What it is |
+|---|---|
+| `figures/` | Charts and visualizations (PNG at 300dpi and PDF). |
 
 ## Installation
 
 ### Prerequisites
 
 - Python 3.9+
-- regulations.gov API key ([Get one here](https://api.regulations.gov))
+- regulations.gov API key ([get one here](https://api.regulations.gov))
 
 ### Setup
 
@@ -44,107 +85,88 @@ export REGULATIONS_GOV_API_KEY="your-api-key-here"
 python main.py --validate-api
 ```
 
-## Quick Start
+## Usage
 
-### Run Complete Pipeline
+### Run the Full Pipeline
 
 ```bash
 python main.py --full
 ```
 
-This runs all three phases:
-1. **Data Collection**: Scrapes comments, searches related dockets, calculates baselines
-2. **Analysis**: Corpus NLP (word freq, bigrams, trigrams), duplicate detection
-3. **Export**: Generates publication-ready outputs
+This runs three phases in order:
+1. **Data Collection** — scrapes comments, fetches attachments
+2. **Analysis** — word frequencies, bigrams, trigrams
+3. **Export** — generates publication-ready outputs
 
 ### Run Individual Phases
 
 ```bash
-# Phase 1: Data Collection (requires API access)
-python main.py --phase 1
-
-# Phase 2: Analysis (requires Phase 1 data)
-python main.py --phase 2
-
-# Phase 3: Export (requires Phase 2 analysis)
-python main.py --phase 3
+python main.py --phase 1    # Data collection (requires API key)
+python main.py --phase 2    # Analysis (requires phase 1 data)
+python main.py --phase 3    # Export (requires phase 2 results)
 ```
 
-### Run Individual Tools
+### Run a Single Tool
 
 ```bash
-# Data collection tools
-python main.py --tool scraper         # Fetch comments from regulations.gov
+# Data collection
+python main.py --tool scraper              # Fetch all comments
 python main.py --tool scraper --limit 100  # Test with 100 comments
-python main.py --tool search          # Find related FDA dockets
-python main.py --tool baseline        # Calculate baseline statistics
+python main.py --tool search               # Find related FDA dockets
+python main.py --tool baseline             # Calculate baseline statistics
 
-# Analysis tools
-python main.py --tool corpus          # Word frequencies, bigrams, trigrams
-python main.py --tool frames          # Rhetorical frame detection
-python main.py --tool temporal        # Timeline and duplicate detection
-python main.py --tool citations       # Citation extraction
+# Analysis
+python main.py --tool corpus      # Word frequencies, bigrams, trigrams
+python main.py --tool temporal    # Timeline analysis and duplicate detection
+python main.py --tool citations   # Extract regulatory citations
+python main.py --tool frames      # Rhetorical frame detection (opt-in)
 
-# Export tools
-python main.py --tool charts          # Generate visualizations
-python main.py --tool export          # Publication formatting
+# Export
+python main.py --tool charts     # Generate visualizations
+python main.py --tool export     # Publication formatting (MLA 8 quotes, methodology)
 ```
+
+## How the Analysis Works
+
+### Word Frequencies
+Each comment is tokenized using spaCy (`en_core_web_sm` model) and lemmatized (e.g., "regulations" becomes "regulation"). Words are counted across all 6,959 comments. Two versions are produced: one keeping all words, one filtering out stopwords (common words like "the", "and", "is").
+
+### Bigrams and Trigrams
+After tokenization, consecutive word pairs (bigrams) and triples (trigrams) are extracted. N-grams where every word is a stopword or 2 characters or fewer are filtered out in the "no stopwords" versions.
+
+### Duplicate Detection
+Near-duplicate comments (form letters) are identified using MinHash/LSH with 128 permutations, word-level 3-shingles, and a 0.9 similarity threshold.
 
 ## Project Structure
 
 ```
 docket-discourse/
+├── main.py                       CLI entry point
 ├── scrapers/
-│   ├── regulations_scraper.py    # API scraper
-│   ├── docket_search.py          # Related docket search
-│   └── baseline_calculator.py    # Baseline statistics
+│   ├── regulations_scraper.py    API scraper with checkpoint/resume
+│   ├── attachment_fetcher.py     PDF attachment downloader
+│   ├── docket_search.py          Related docket search
+│   └── baseline_calculator.py    Baseline statistics
 ├── analyzers/
-│   ├── corpus_analyzer.py        # Word freq, bigrams, trigrams
-│   ├── frame_detector.py         # Frame detection (opt-in)
-│   └── temporal_mapper.py        # Timeline & duplicates
+│   ├── corpus_analyzer.py        Word freq, bigrams, trigrams
+│   ├── temporal_mapper.py        Timeline and duplicate detection
+│   └── frame_detector.py         Rhetorical frame detection (opt-in)
 ├── visualization/
-│   ├── citation_extractor.py     # Citation extraction
-│   └── chart_generator.py        # Visualization
+│   ├── citation_extractor.py     Regulatory citation extraction
+│   └── chart_generator.py        Chart generation
 ├── utils/
-│   ├── config.py                 # Central configuration
-│   ├── data_loader.py            # Data loading utilities
-│   └── export_formatter.py       # Publication export
+│   ├── config.py                 Central configuration
+│   ├── data_loader.py            Data loading and saving
+│   ├── comment_classifier.py     Comment classification (available, not active)
+│   └── export_formatter.py       Publication export formatting
+├── dictionaries/                 Keyword and term dictionaries
 ├── data/
-│   ├── raw/                      # Raw scraped data
-│   ├── processed/                # Analysis outputs
-│   └── outputs/                  # Publication-ready exports
-├── tests/                        # pytest unit tests
-├── main.py                       # CLI entry point
+│   ├── raw/                      Downloaded comments and attachments
+│   ├── processed/                Analysis output CSVs and JSONs
+│   └── outputs/                  Publication-ready figures
+├── tests/                        pytest unit tests
 └── requirements.txt
 ```
-
-## Output Files
-
-### data/raw/
-- `comments.json` - Full structured comment data
-- `comments.csv` - Flattened CSV
-- `comments_searchable_ALL.txt` - All comments as searchable text
-
-### data/processed/
-- `word_freq_with_stopwords.csv` / `word_freq_no_stopwords.csv`
-- `bigrams_with_stopwords.csv` / `bigrams_no_stopwords.csv`
-- `trigrams_with_stopwords.csv` / `trigrams_no_stopwords.csv`
-- `corpus_summary.json` - Summary statistics
-- `duplicate_comment_groups.csv`
-- `unique_arguments_analysis.json`
-- `citations_*.csv` - Extracted regulatory citations
-
-### data/outputs/
-- `figures/` - PNG (300dpi) and PDF visualizations
-- `quotes/` - Thematic quote collections with MLA citations
-- `methodology.md` - Generated methodology section
-
-## Duplicate Detection
-
-Near-duplicates are identified using MinHash/LSH:
-- 128 permutations
-- Word-level 3-shingles
-- 0.9 similarity threshold
 
 ## Testing
 
@@ -155,7 +177,7 @@ pytest tests/ --cov=.
 
 ## API Rate Limiting
 
-The regulations.gov API has default limits of 1000 requests/hour. The scraper includes automatic rate limiting, checkpoint/resume, and retry on 429 errors.
+The regulations.gov API allows 1,000 requests/hour. The scraper handles this automatically with built-in rate limiting (~3.6s delay between requests), checkpoint/resume every 100 comments, and retry on 429 errors. A full scrape of ~7,000 comments takes approximately 8 hours.
 
 ## License
 

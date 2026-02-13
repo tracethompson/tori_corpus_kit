@@ -2,44 +2,44 @@
 
 An analysis toolkit for studying FDA public comments on docket **FDA-2015-D-3719** — the regulatory proposal on *Human Cells, Tissues, and Cellular and Tissue-Based Products from Adipose Tissue*.
 
-This toolkit downloads and analyzes ~6,950 public comments submitted to the FDA, producing searchable text files, word frequencies, n-grams, and publication-ready outputs.
+This toolkit downloaded and analyzed **6,959 public comments** submitted to the FDA, producing searchable text files, word frequencies, bigrams, trigrams, and publication-ready outputs.
 
 ---
 
 ## Where to Find Things
 
-### Searching and Reading Comments
+### Reading Comments
 
 | What you want | Where to look |
 |---|---|
-| All comments as readable text | `docket-discourse/data/raw/comments_searchable_ALL.txt` |
-| Full structured data (JSON) | `docket-discourse/data/raw/comments.json` |
-| Spreadsheet format (CSV) | `docket-discourse/data/raw/comments.csv` |
-| PDF attachments | `docket-discourse/data/raw/manual_attachments/` |
+| All comments as plain text (searchable) | [`data/raw/comments_searchable_ALL.txt`](docket-discourse/data/raw/comments_searchable_ALL.txt) |
+| Full structured data (JSON) | [`data/raw/comments.json`](docket-discourse/data/raw/comments.json) |
+| Spreadsheet format (CSV) | [`data/raw/comments.csv`](docket-discourse/data/raw/comments.csv) |
+| PDF attachments (39 files) | [`data/raw/manual_attachments/`](docket-discourse/data/raw/manual_attachments/) |
 
-### Analysis Results
+**Tip:** The searchable text file is the easiest way to read through comments. Each comment is separated by a header with the submitter name, date, and comment ID. Use Ctrl+F / Cmd+F to search for keywords.
 
-| What you want | Where to look |
-|---|---|
-| Word frequency counts | `docket-discourse/data/processed/word_freq_*.csv` |
-| Bigrams | `docket-discourse/data/processed/bigrams_*.csv` |
-| Trigrams | `docket-discourse/data/processed/trigrams_*.csv` |
-| Duplicate / form letter detection | `docket-discourse/data/processed/duplicate_comment_groups.csv` |
-| Extracted regulatory citations | `docket-discourse/data/processed/citations_*.csv` |
-
-### Publication-Ready Outputs
+### Word Frequencies and N-Grams
 
 | What you want | Where to look |
 |---|---|
-| Charts and figures (300dpi PNG & PDF) | `docket-discourse/data/outputs/figures/` |
-| Curated quotes with MLA citations | `docket-discourse/data/outputs/quotes/` |
-| Auto-generated methodology section | `docket-discourse/data/outputs/methodology.md` |
+| Most common words (with stopwords) | [`data/processed/word_freq_with_stopwords.csv`](docket-discourse/data/processed/word_freq_with_stopwords.csv) |
+| Most common words (no stopwords) | [`data/processed/word_freq_no_stopwords.csv`](docket-discourse/data/processed/word_freq_no_stopwords.csv) |
+| Bigrams — two-word pairs (with stopwords) | [`data/processed/bigrams_with_stopwords.csv`](docket-discourse/data/processed/bigrams_with_stopwords.csv) |
+| Bigrams — two-word pairs (no stopwords) | [`data/processed/bigrams_no_stopwords.csv`](docket-discourse/data/processed/bigrams_no_stopwords.csv) |
+| Trigrams — three-word phrases (with stopwords) | [`data/processed/trigrams_with_stopwords.csv`](docket-discourse/data/processed/trigrams_with_stopwords.csv) |
+| Trigrams — three-word phrases (no stopwords) | [`data/processed/trigrams_no_stopwords.csv`](docket-discourse/data/processed/trigrams_no_stopwords.csv) |
 
-### Documentation
+**With vs. without stopwords:** Stopwords are common words like "the", "is", "and". The "no stopwords" versions filter these out so you can see the meaningful content words. The "with stopwords" versions keep everything, which is useful for seeing natural phrasing.
+
+### Other Analysis Files
 
 | What you want | Where to look |
 |---|---|
-| Technical documentation | `docket-discourse/README.md` |
+| Corpus summary statistics | [`data/processed/corpus_summary.json`](docket-discourse/data/processed/corpus_summary.json) |
+| Regulatory citation extraction | [`data/processed/citations_all.csv`](docket-discourse/data/processed/citations_all.csv) |
+| Citation summary | [`data/processed/citation_summary.json`](docket-discourse/data/processed/citation_summary.json) |
+| Charts and figures | [`data/outputs/figures/`](docket-discourse/data/outputs/figures/) |
 
 ---
 
@@ -47,18 +47,27 @@ This toolkit downloads and analyzes ~6,950 public comments submitted to the FDA,
 
 ```
 tori_corpus_kit/
-└── docket-discourse/          Main application
-    ├── main.py                Entry point - run this to start
-    ├── scrapers/              Downloads comments from regulations.gov
-    ├── analyzers/             NLP analysis (word freq, n-grams, duplicates)
-    ├── visualization/         Generates charts and extracts citations
-    ├── utils/                 Configuration and helper utilities
+└── docket-discourse/
+    ├── main.py                    Run this to start any tool
     ├── data/
-    │   ├── raw/               Downloaded comments and attachments
-    │   ├── processed/         Analysis output files
-    │   └── outputs/           Publication-ready figures, quotes
-    ├── tests/                 Automated tests
-    └── docs/                  Additional documentation
+    │   ├── raw/
+    │   │   ├── comments.json              All 6,959 comments (structured)
+    │   │   ├── comments.csv               All comments (spreadsheet)
+    │   │   ├── comments_searchable_ALL.txt All comments (readable text)
+    │   │   └── manual_attachments/        39 PDF attachments
+    │   ├── processed/
+    │   │   ├── word_freq_*.csv            Word frequency counts
+    │   │   ├── bigrams_*.csv              Two-word pair counts
+    │   │   ├── trigrams_*.csv             Three-word phrase counts
+    │   │   ├── citations_*.csv            Regulatory citation data
+    │   │   └── corpus_summary.json        Summary statistics
+    │   └── outputs/
+    │       └── figures/                   Charts and visualizations
+    ├── scrapers/                  Downloads comments from regulations.gov
+    ├── analyzers/                 NLP analysis (word freq, n-grams)
+    ├── visualization/             Charts and citation extraction
+    ├── utils/                     Configuration and helpers
+    └── tests/                     Automated tests
 ```
 
 ---
@@ -98,4 +107,4 @@ python main.py --tool corpus          # Word frequencies, bigrams, trigrams
 python main.py --tool export          # Generate publication files
 ```
 
-See `docket-discourse/README.md` for the full list of tools and options.
+See [`docket-discourse/README.md`](docket-discourse/README.md) for the full list of tools and options.
