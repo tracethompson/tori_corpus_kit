@@ -108,3 +108,37 @@ python main.py --tool export          # Generate publication files
 ```
 
 See [`docket-discourse/README.md`](docket-discourse/README.md) for the full list of tools and options.
+
+---
+
+## FDA Public-Hearing Comment Benchmarking
+
+To contextualize the 6,959 comments on docket FDA-2015-D-3719, we queried the regulations.gov API for all FDA dockets associated with public hearings from 2008 to present and counted the total public comments on each.
+
+### Key Findings
+
+| Metric | All Dockets (n=584) | Confirmed Hearings (n=61) |
+|---|---|---|
+| Mean | 549 | 179 |
+| Median | 2.5 | 25 |
+| 90th percentile | 109 | 385 |
+| 95th percentile | 385 | 1,222 |
+| 99th percentile | 3,926 | 1,842 |
+| **6,950 comments → percentile rank** | **99th** | **100th (highest)** |
+
+- 6,950 comments places at the **99th percentile** across all 584 dockets. Only 6 dockets received more, and 5 of those are COVID-era vaccine advisory committee meetings driven by mass-comment campaigns.
+- Among the 61 confirmed hearing dockets, 6,950 would be the **single highest** comment count.
+
+### Search Precision
+
+The regulations.gov API's `searchTerm` filter performs full-text search, not title matching. Of 584 dockets returned, 523 (90%) were flagged as probable false positives — documents that mention "public hearing" in body text but are not actual hearing notices (e.g., advisory committee meetings, patent extensions, debarment orders). The 61 confirmed hearing dockets are those whose titles explicitly reference a public hearing or public meeting.
+
+### Output Files
+
+| File | Description |
+|---|---|
+| [`fda_hearing_summary.pdf`](docket-discourse/fda_hearing_analysis/fda_hearing_summary.pdf) | Stakeholder-ready summary report |
+| [`fda_hearing_comment_analysis.pdf`](docket-discourse/fda_hearing_analysis/fda_hearing_comment_analysis.pdf) | Full report with data visualizations |
+| [`fda_hearings_results.csv`](docket-discourse/fda_hearing_analysis/fda_hearings_results.csv) | Raw data — all 584 dockets with comment counts |
+| [`fda_hearings.db`](docket-discourse/fda_hearing_analysis/fda_hearings.db) | SQLite database (resumable query state) |
+| [`fda_hearings.py`](docket-discourse/fda_hearing_analysis/fda_hearings.py) | Data collection script |
