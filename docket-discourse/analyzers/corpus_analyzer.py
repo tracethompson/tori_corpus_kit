@@ -5,6 +5,7 @@ Perform NLP analysis on FDA public comments corpus.
 Generates word frequencies, n-grams, and possessive language analysis
 for three parallel tracks: All, Personal Narratives, Technical Documents.
 """
+import html
 import logging
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -89,6 +90,10 @@ class CorpusAnalyzer:
                 "noun_phrases": [],
             }
 
+        # Clean HTML tags and decode entities (e.g. &#39; → ', &quot; → ")
+        text = re.sub(r"<[^>]+>", " ", text)
+        text = html.unescape(text)
+
         # Process with spaCy
         doc = self.nlp(text[:100000])  # Limit for very long documents
 
@@ -98,9 +103,15 @@ class CorpusAnalyzer:
 
         for token in doc:
             if not token.is_punct and not token.is_space:
-                tokens.append(token.text.lower())
-                lemmas.append(token.lemma_.lower())
-                pos_tags.append((token.text, token.pos_))
+                # Merge clitics ('s, n't, 're, etc.) onto the previous token
+                if tokens and token.text.lower() in ("'s", "n't", "'re", "'ve", "'ll", "'d", "'m"):
+                    tokens[-1] += token.text.lower()
+                    lemmas[-1] = tokens[-1]  # Use merged token form as lemma
+                    pos_tags[-1] = (pos_tags[-1][0] + token.text, pos_tags[-1][1])
+                else:
+                    tokens.append(token.text.lower())
+                    lemmas.append(token.lemma_.lower())
+                    pos_tags.append((token.text, token.pos_))
 
         # Extract noun phrases
         noun_phrases = [chunk.text.lower() for chunk in doc.noun_chunks]
